@@ -44,15 +44,6 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>http://bsch0111.github.io/about/</link>
-      <pubDate>Sat, 28 Nov 2020 02:31:26 +0900</pubDate>
-      
-      <guid>http://bsch0111.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.</description>
-    </item>
-    
-    <item>
       <title>Test</title>
       <link>http://bsch0111.github.io/post/test/</link>
       <pubDate>Sat, 28 Nov 2020 02:13:04 +0900</pubDate>
