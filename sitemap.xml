@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-11-28T02:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/emoji-support/</loc>
+    <lastmod>2020-11-28T02:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/</loc>
+    <lastmod>2020-11-28T02:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/math-typesetting/</loc>
+    <lastmod>2020-11-28T02:35:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/placeholder-text/</loc>
+    <lastmod>2020-11-28T02:34:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/rich-content/</loc>
+    <lastmod>2020-11-28T02:33:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/test/</loc>
+    <lastmod>2020-11-28T02:13:04+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>
