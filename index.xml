@@ -8,12 +8,12 @@
     <language>ko-kr</language>
     <lastBuildDate>Fri, 04 Dec 2020 01:14:14 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Development Setting</title>
+      <title>Mac book Development Setting</title>
       <link>https://bsch0111.github.io/post/development-setting/</link>
       <pubDate>Fri, 04 Dec 2020 01:14:14 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/post/development-setting/</guid>
-      <description></description>
+      <description>초기 맥북 개발환경 구성  언어 : Python 쉘 : Fish Shell Python 가상환경 : anaconda 패키지 설치 프로그램 :brew, cask 에디터 : vscose 터미널 : iterm2  쉘 Fish Shell &amp;ldquo;I hate configuration, and combing hundreds of git repos for bashfiles and find what works for me&amp;rdquo; : 참고한 블로그 글</description>
     </item>
     
     <item>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>개발환경구성 on </title>
+    <link>https://bsch0111.github.io/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%EA%B5%AC%EC%84%B1/</link>
+    <description>Recent content in 개발환경구성 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 04 Dec 2020 01:14:14 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%EA%B5%AC%EC%84%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac book Development Setting</title>
+      <link>https://bsch0111.github.io/post/development-setting/</link>
+      <pubDate>Fri, 04 Dec 2020 01:14:14 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/development-setting/</guid>
+      <description>초기 맥북 개발환경 구성  언어 : Python 쉘 : Fish Shell Python 가상환경 : anaconda 패키지 설치 프로그램 :brew, cask 에디터 : vscose 터미널 : iterm2  쉘 Fish Shell &amp;ldquo;I hate configuration, and combing hundreds of git repos for bashfiles and find what works for me&amp;rdquo; : 참고한 블로그 글</description>
+    </item>
+    
+  </channel>
+</rss>
