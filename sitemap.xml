@@ -4,16 +4,46 @@
   
   <url>
     <loc>https://bsch0111.github.io/</loc>
-    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
+    <lastmod>2020-12-05T01:47:19+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bsch0111.github.io/post/branch_detach/</loc>
-    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
+    <loc>https://bsch0111.github.io/categories/blog/</loc>
+    <lastmod>2020-12-05T01:47:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/post/blog_tab_resize/</loc>
+    <lastmod>2020-12-05T01:47:19+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://bsch0111.github.io/categories/</loc>
+    <lastmod>2020-12-05T01:47:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/tags/hugo-column-size/</loc>
+    <lastmod>2020-12-05T01:47:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/tags/hugo-tab-size/</loc>
+    <lastmod>2020-12-05T01:47:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/post/</loc>
+    <lastmod>2020-12-05T01:47:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/tags/</loc>
+    <lastmod>2020-12-05T01:47:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/post/branch_detach/</loc>
     <lastmod>2020-12-05T01:28:20+09:00</lastmod>
   </url>
   
@@ -28,17 +58,7 @@
   </url>
   
   <url>
-    <loc>https://bsch0111.github.io/post/</loc>
-    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bsch0111.github.io/tags/submodule/</loc>
-    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bsch0111.github.io/tags/</loc>
     <lastmod>2020-12-05T01:28:20+09:00</lastmod>
   </url>
   
@@ -55,6 +75,11 @@
   <url>
     <loc>https://bsch0111.github.io/post/what-is-git/</loc>
     <lastmod>2020-12-04T23:37:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/post/github/</loc>
+    <lastmod>2020-12-04T14:05:11+09:00</lastmod>
   </url>
   
   <url>

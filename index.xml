@@ -6,7 +6,16 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 05 Dec 2020 01:28:20 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 01:47:19 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog_tab_resize</title>
+      <link>https://bsch0111.github.io/post/blog_tab_resize/</link>
+      <pubDate>Sat, 05 Dec 2020 01:47:19 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/blog_tab_resize/</guid>
+      <description>hugo anatole 테마 만지기  hugo anatole 테마 기본은 옆의 탭이 너무 길다.</description>
+    </item>
+    
     <item>
       <title>Branch_detach</title>
       <link>https://bsch0111.github.io/post/branch_detach/</link>
@@ -32,6 +41,15 @@
       <pubDate>Fri, 04 Dec 2020 23:37:52 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/post/what-is-git/</guid>
+      <description>GIT에 대한 궁금증  Github와 Git의 차이 &amp;amp; .git 폴더가 어떤 일을 하는지  git의 발전방향</description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://bsch0111.github.io/post/github/</link>
+      <pubDate>Fri, 04 Dec 2020 14:05:11 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/github/</guid>
       <description>GIT에 대한 궁금증  Github와 Git의 차이 &amp;amp; .git 폴더가 어떤 일을 하는지  git의 발전방향</description>
     </item>
     
