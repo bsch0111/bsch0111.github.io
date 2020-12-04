@@ -4,12 +4,42 @@
   
   <url>
     <loc>https://bsch0111.github.io/</loc>
-    <lastmod>2020-12-04T23:55:06+09:00</lastmod>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/post/branch_detach/</loc>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://bsch0111.github.io/categories/</loc>
-    <lastmod>2020-12-04T23:55:06+09:00</lastmod>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/tags/detach/</loc>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/categories/git/</loc>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/post/</loc>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/tags/submodule/</loc>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bsch0111.github.io/tags/</loc>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
   </url>
   
   <url>
@@ -18,27 +48,7 @@
   </url>
   
   <url>
-    <loc>https://bsch0111.github.io/categories/git/</loc>
-    <lastmod>2020-12-04T23:55:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bsch0111.github.io/post/</loc>
-    <lastmod>2020-12-04T23:55:06+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bsch0111.github.io/post/problem-when-repository-has-submodule/</loc>
-    <lastmod>2020-12-04T23:55:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bsch0111.github.io/tags/submodule/</loc>
-    <lastmod>2020-12-04T23:55:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bsch0111.github.io/tags/</loc>
     <lastmod>2020-12-04T23:55:06+09:00</lastmod>
   </url>
   
