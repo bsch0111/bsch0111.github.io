@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme=""><head>
+    <title> morgan | Blog | What Is Git </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="간단하게 올리는 블로그 | bsch0111@naver.com">
+    
+    <link rel="stylesheet"
+          href="https://bsch0111.github.io/css/style.min.ae4af30f6a89627b05def70e914c14cbb53a71d28a88ec8d87a40ecc7c2778e2.css"
+          integrity="sha256-rkrzD2qJYnsF3vcOkUwUy7U6cdKKiOyNh6QOzHwneOI="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://bsch0111.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bsch0111.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://bsch0111.github.io/post/what-is-git/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://bsch0111.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What Is Git"/>
+<meta name="twitter:description" content="GIT에 대한 궁금증  Github와 Git의 차이 &amp; .git 폴더가 어떤 일을 하는지  git의 발전방향"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://bsch0111.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">morgan&#39;s 블로그</a></h3>
+            <div class="description">
+                <p>간단하게 올리는 블로그 | bsch0111@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/bsch0111/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bsch0111@naver.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; morgan | Blog 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>What Is Git</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Fri, Dec 4, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h1 id="git에-대한-궁금증">GIT에 대한 궁금증</h1>
+<ul>
+<li>Github와 Git의 차이 &amp; .git 폴더가 어떤 일을 하는지</li>
+</ul>
+<p>git의 발전방향</p>
+<ul>
+<li>로컬 폴더에서 파일 관리 -&gt; 데이터베이스를 이용한 로컬 버전 관리 ( VCS : Version Control System ) -&gt; 중앙집중식 버전관리 ( CVCS : Centered Version Control System) ex. subversion -&gt;  분산 버전 관리 시스템 (DVCS : Distributed Version Control System )</li>
+<li>Git 은 기존에 리눅스에서 사용하던 분산 버전 관리 시스템이 유료화 되면서 리눅스 창시자 리눅스 토발즈가 빠른 속도와 분산을 목표로하는 분산 버전 관리 시스템을 개발</li>
+</ul>
+<p>.git 폴더가 어떤 일을 하는지</p>
+<ul>
+<li>git의 핵심 : 로컬 파일시스템에 버전 데이터베이스 정보를 보관함</li>
+<li>기존의 Subversion과의 차이 : 기존의 Subversibon 은 서버와 작업을 하다보니 비행기를 타고 이동하거나 인터넷이 연결되지 않았을 때 버전 정보에 대한 commit을 지정할 수 가 없었음. 인터넷이 연결된 순간의 결과 정보만 서버에 올릴 수 있음</li>
+<li>그러나 git은 로컬 시스템서 모든 이력정보가 담긴 데이터베이스가 있으니 비행기를 타고 이동 중이나 인터넷이 연결되지 않았을 때도 개발 작업을 진행하고 그 이력을 저장하고 싶을 때 commit 작업을 수행할 수 있음</li>
+<li>서버 없이 구동할 수 있다는 점과 빠르다는 점이 크게 다름</li>
+<li>이러한 git 을 구동하는데 로컬 데이터베이스의 기능을 하는게 .git 폴더이다. 다르게 보면 .git 폴더를 제거하면 해당 폴더에서는 git 과 관련된 기능을 수행할 수 없다</li>
+</ul>
+<p>git과 github의 차이</p>
+<ul>
+<li>git 을 협업 할때 쓰다보면 서버를 구동해야 할때가 많다. 자체적으로 git 저장소(서버)를 만들어서 적용할 수 있지만 이미 잘 구동되고 있는 서버에 프로젝트를 생성해서 작업하면 편하다</li>
+<li>github는 이미 구동되고 있는 git server이다. 여기서 프로젝트를 생성하면 git 호스팅 정보, 이슈 트래킹, 코드 리뷰 등을 추가적으로 제공한다. 물론 git을 기반으로 개인적으로 server를 개발해도 된다.</li>
+</ul>
+<p>git add 와 git commit 의 차이</p>
+<ul>
+<li>git add 는 짧막한 이력정보를 남기는 것. 새로운 파일의 이력정보를 추가하거나, 수정된 파일을 스테이지에 올리고 싶을 때 add를 수행</li>
+<li>git commit은 로컬 데이터베이스에 올리는 것. add로 주가된 버전 정보가 로컬데이터베이스에 올라간다. 가장 최근에 변경된 정보가 올라가는 것이 아니다.</li>
+</ul>
+<p>git clone을 하면 자동으로 저장소가 등록되나요</p>
+<ul>
+<li>넵. 자동으로 등록됩니다. git clone 을 하고, git remote -v 를 보시면 clone 한 레파지토리가 등록되어 있음을 확인할 수 있습니다.</li>
+</ul>
+<ul>
+<li>origin 이 뜻하는 것은 무엇일까</li>
+</ul>
+<ul>
+<li>원격 저장소의 별칭 입니다.</li>
+<li>저장소를 clone 하면 origin이라는 이름으로 추가한다.</li>
+</ul>
+<ul>
+<li>git remote 옆에 써있는 fetch의 의미 &amp; git remote 로 여러 개의 저장소 관리하는 방법</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">별칭 원격레포지토리주소 <span style="color:#f92672">(</span>fetch<span style="color:#f92672">)</span>
+별칭 원격레포지토리주소 <span style="color:#f92672">(</span>push<span style="color:#f92672">)</span>
+</code></pre></div><ul>
+<li>cf. fetch : 가져오다</li>
+<li>git fetch [remote-name] : 로컬 저장소에는 없지만 리모트 저장소에 있는 데이터를 모두 가져온다. 그러면 리모트 저장소의 모든 브랜치를 로컬에서 접근할 수 있어서 언제든지 Merge 하거나 내용을 살펴볼 수 있다.</li>
+<li>git fetch 명령은 리모트 저장소의 데이터를 가져오지만 자동으로 merge하지 않는다. 그래서 로컬에서 하던 작업을 정리하고 수동으로 merge해야한다.</li>
+</ul>
+<ul>
+<li>Pull Requests 란</li>
+</ul>
+<ul>
+<li>pull 명령은 리모트 저장소 브랜치를 가져올 뿐만 아니라 자동으로 로컬 브랜치와 Merge 시킬 수 있다.</li>
+</ul>
+<ul>
+<li>그럼 가져오는게 clone, fetch, pull 세 가지인데, 이 세가지의 차이는 무엇인가?</li>
+</ul>
+<ul>
+<li>git clone 명령은 자동으로 로컬의 master 브랜치가 리모트 저장소의 master 브랜치를 추적하도록 한다.</li>
+<li>git pull 명령은 clone 한 서버에서 데이터를 가져오고 그 데이터를 자동으로 현재 작업하는 코드와 merge 시킨다.</li>
+<li>git clone은 초기에 빈 프로젝트에 셋팅을 할때, git pull은 현재 디렉토리에서 업데이트 된 부분을 다운로드하려고 할때 만이 사용함</li>
+<li>참고 : git에서 clone과 pull의 차이점 <a href="https://meaownworld.tistory.com/157">https://meaownworld.tistory.com/157</a></li>
+</ul>
+<ul>
+<li>git remote 를 한다는 것은 현재 폴더와 원격 레포지토리를 동기화 시키는건가 ?</li>
+</ul>
+<ul>
+<li>등록만하는 것이다. git clone 같은 경우 자동으로 remote 초기 동기화 이후 remote 등록을 해주고, git pull 은 연결된 remote 레포에서 데이터를 가져오는 부분만 수행한다.</li>
+</ul>
+<ul>
+<li>Branch 과정의 이해 &amp; checkout 과 init, remote 연결의 차이 &amp; Fork 와 Clone 의 차이</li>
+</ul>
+<ul>
+<li>branch는 포인터이다.</li>
+<li>git branch &lt;branch명&gt; : 해당 레포의 master 브런치의 가장 최신본을 가르키는 브런치를 생성한다. 하지만, 단지 가져오기만 할뿐 git이 해당 브런치를 가리키진 않는다.</li>
+<li>git checkout &lt;branch명&gt; : 다른 브런치로 이동하는 기능, 브런치로 이동하면 워킹 디렉토리의 파일이 해당 브런치의 파일로 변경된다는 것을 기억 ! 만약에 충돌이 일어난다면 branch가 바뀌지 않는다.</li>
+<li>git merge &lt;합칠 branch명&gt; : 현재 브런치와 다른 브런치를 합치는 방법</li>
+<li>git pull 명령 은 두가지 명령을 합친 것이다.
+<ul>
+<li>git fetch &lt;리모트명&gt;</li>
+<li>git merge &lt;브런치명&gt;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>git push 명령어</li>
+</ul>
+<ul>
+<li>git push <!-- raw HTML omitted --> <!-- raw HTML omitted --> : ex git push origin master</li>
+</ul>
+<ul>
+<li>colab에서 레포지토리를 포크하는 방법</li>
+<li>스테이징 개념 : 3가지 스테이지</li>
+<li>git submodule</li>
+</ul>
+<p>공부하다보니 궁금</p>
+<ul>
+<li>git의 되돌리기 기능 : 수강생의 파일을 되돌릴 필요가 있을 듯함</li>
+</ul>
+<ul>
+<li>스테이지 되어 있는 파일을 스테이지에서 내릴 때 : git reset &lt;파일명&gt;</li>
+</ul>
+<ul>
+<li>git log 와 관련된 사용 : 공부하기보단 실습하면서 배워야 할거같다.</li>
+<li>git merge 충돌</li>
+<li>git rebase 와 git merge 의 차이</li>
+</ul>
+<p>주니어로써 도움 드릴 수 있을 일</p>
+<ul>
+<li>세션 1,2 의 colab의 git 사용과 , 세션 3의 git 사용의 차이를 알려주면 좋을거 같음</li>
+<li>세션 1,2는 쉽게 사용하는 방법을 알려주고</li>
+<li>세션 3에는 git의 이해와 깊은 사용에 대해서 안다고 보면 될거같음</li>
+<li>왜냐하면 취업시장에서 git의 사용 및 이해에 대해 물어보는 사람들도 있음, 그러나 실제 프로젝트에서는 colab의 쉬운 방식을 이용하기도 하고 지금부터 배우는 방식을 사용하기도함 ..</li>
+<li>엔지니어링에 가깝다면 git을 커맨드라인으로 많이 이용함</li>
+<li>어떤걸 강의를 들어야하고, 어떤건 공부를 해야하는지 구분할 수 있게 된거같다.</li>
+</ul>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/git/">git</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/git/">git</a></span>
+
+            </div>
+        </div>
+
+        
+            
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

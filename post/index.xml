@@ -6,7 +6,16 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 04 Dec 2020 01:14:14 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 23:37:52 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Git</title>
+      <link>https://bsch0111.github.io/post/what-is-git/</link>
+      <pubDate>Fri, 04 Dec 2020 23:37:52 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/what-is-git/</guid>
+      <description>GIT에 대한 궁금증  Github와 Git의 차이 &amp;amp; .git 폴더가 어떤 일을 하는지  git의 발전방향</description>
+    </item>
+    
     <item>
       <title>Mac book Development Setting</title>
       <link>https://bsch0111.github.io/post/development-setting/</link>
