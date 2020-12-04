@@ -6,7 +6,16 @@
     <description>Recent content in git on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 04 Dec 2020 23:37:52 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 23:55:06 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem When Repository Has Submodule</title>
+      <link>https://bsch0111.github.io/post/problem-when-repository-has-submodule/</link>
+      <pubDate>Fri, 04 Dec 2020 23:55:06 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/problem-when-repository-has-submodule/</guid>
+      <description>Clone 할 레포지토리가 submodule을 포함하고 있을 떄 문제점  이전에 로컬 저장소에서 push 할 때 하나의 저장소 밑에 하나의 저장소가 submodule로 되어 있음  궁금증  다시 클론해서 가져올 때 submodule 이 지정되어 있는가?</description>
+    </item>
+    
     <item>
       <title>What Is Git</title>
       <link>https://bsch0111.github.io/post/what-is-git/</link>

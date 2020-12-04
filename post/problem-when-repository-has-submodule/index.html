@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme=""><head>
-    <title> morgan | Blog | git </title>
+    <title> morgan | Blog | Problem When Repository Has Submodule </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -21,10 +21,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://bsch0111.github.io/categories/git/">
+    <link rel="canonical" href="https://bsch0111.github.io/post/problem-when-repository-has-submodule/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="https://bsch0111.github.io/categories/git/index.xml" title="" />
     
     
     
@@ -33,8 +32,8 @@
             integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
             crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="git"/>
-<meta name="twitter:description" content="간단하게 올리는 블로그 | bsch0111@naver.com"/>
+<meta name="twitter:title" content="Problem When Repository Has Submodule"/>
+<meta name="twitter:description" content="Clone 할 레포지토리가 submodule을 포함하고 있을 떄 문제점  이전에 로컬 저장소에서 push 할 때 하나의 저장소 밑에 하나의 저장소가 submodule로 되어 있음  궁금증  다시 클론해서 가져올 때 submodule 이 지정되어 있는가?"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown">
@@ -105,30 +104,75 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive animated fadeInDown">
-        <ul class="list-with-title">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Problem When Repository Has Submodule</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Fri, Dec 4, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h1 id="clone-할-레포지토리가-submodule을-포함하고-있을-떄">Clone 할 레포지토리가 submodule을 포함하고 있을 떄</h1>
+<h2 id="문제점">문제점</h2>
+<ul>
+<li>이전에 로컬 저장소에서 push 할 때 하나의 저장소 밑에 하나의 저장소가 submodule로 되어 있음</li>
+</ul>
+<h3 id="궁금증">궁금증</h3>
+<ul>
+<li>다시 클론해서 가져올 때 submodule 이 지정되어 있는가?</li>
+<li>submodule 이 지정되어 있지 않다면 어떻게 지정하는가?</li>
+</ul>
+<h3 id="git-clone-path-를-통한-해결-시도">git clone [path] 를 통한 해결 시도</h3>
+<ul>
+<li>submodule 이 지정이되어있지만 다음과 같은 에러가 발생함
+<ul>
+<li>fatal: in unpopulated submodule &lsquo;public&rsquo;</li>
+<li>단순 git clone 으로 레파지토리를 복사해서는 안됨</li>
+</ul>
+</li>
+</ul>
+<h3 id="질문을-google-으로-">질문을 google 으로 ..</h3>
+<pre><code>- submodule 이 있는 git repo clone 후 작업하고 push가 안될 때
+- git clone submodule  
+- https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules
+- 서브 모듈이 있는 레포지토리는 부모 레포를 clone 할때 —recurse-submodules를 넣어주면 서브 모듈에 대한 clone과 init 을 잘해준다.
+```bash
+   --recurse-submodules[=&lt;pathspec]
+       After the clone is created, initialize and clone submodules within based on the provided
+       pathspec. If no pathspec is provided, all submodules are initialized and cloned. This option
+       can be given multiple times for pathspecs consisting of multiple entries. The resulting clone
+       has submodule.active set to the provided pathspec, or &quot;.&quot; (meaning all submodules) if no
+       pathspec is provided.
+
+       Submodules are initialized and cloned using their default settings. This is equivalent to
+       running git submodule update --init --recursive &lt;pathspec&gt; immediately after the clone is
+       finished. This option is ignored if the cloned repository does not have a worktree/checkout
+       (i.e. if any of --no-checkout/-n, --bare, or --mirror is given)
+```bash
+</code></pre>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/git/">git</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/git/">git</a><a class="tag" href="/tags/submodule/">submodule</a></span>
+
+            </div>
+        </div>
+
+        
             
-                <div class="listing-title">2020</div>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/post/problem-when-repository-has-submodule/" title="Problem When Repository Has Submodule">Problem When Repository Has Submodule</a>
-                                <div class="post-time"><span class="date">Dec 4</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/post/what-is-git/" title="What Is Git">What Is Git</a>
-                                <div class="post-time"><span class="date">Dec 4</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+        
     </div>
+
 
         </div>
     </div>
