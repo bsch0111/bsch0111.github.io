@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>__name__ on </title>
+    <link>https://bsch0111.github.io/tags/__name__/</link>
+    <description>Recent content in __name__ on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 06 Dec 2020 03:08:28 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/__name__/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> __main__ : python 모듈 호출 시 전역에 선언된 함수 수행 문제해결방법</title>
+      <link>https://bsch0111.github.io/post/python_global/</link>
+      <pubDate>Sun, 06 Dec 2020 03:08:28 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/python_global/</guid>
+      <description>python 모듈 호출 시 전역에 선언된 함수 실행 python 모듈을 호출 했을 때 전역으로 선언되어 있는 함수, 및 변수를 수행한다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,43 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 05 Dec 2020 01:47:19 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 03:08:28 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>__main__</title>
+      <link>https://bsch0111.github.io/tags/__main__/</link>
+      <pubDate>Sun, 06 Dec 2020 03:08:28 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/__main__/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>__name__</title>
+      <link>https://bsch0111.github.io/tags/__name__/</link>
+      <pubDate>Sun, 06 Dec 2020 03:08:28 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/__name__/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://bsch0111.github.io/tags/python/</link>
+      <pubDate>Sun, 06 Dec 2020 03:08:28 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>전역변수</title>
+      <link>https://bsch0111.github.io/tags/%EC%A0%84%EC%97%AD%EB%B3%80%EC%88%98/</link>
+      <pubDate>Sun, 06 Dec 2020 03:08:28 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/%EC%A0%84%EC%97%AD%EB%B3%80%EC%88%98/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo column size</title>
       <link>https://bsch0111.github.io/tags/hugo-column-size/</link>
@@ -67,15 +103,6 @@
       <pubDate>Thu, 03 Dec 2020 00:43:40 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/tags/oop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://bsch0111.github.io/tags/python/</link>
-      <pubDate>Thu, 03 Dec 2020 00:43:40 +0900</pubDate>
-      
-      <guid>https://bsch0111.github.io/tags/python/</guid>
       <description></description>
     </item>
     

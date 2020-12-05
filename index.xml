@@ -6,7 +6,16 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 05 Dec 2020 01:47:19 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 03:08:28 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> __main__ : python 모듈 호출 시 전역에 선언된 함수 수행 문제해결방법</title>
+      <link>https://bsch0111.github.io/post/python_global/</link>
+      <pubDate>Sun, 06 Dec 2020 03:08:28 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/python_global/</guid>
+      <description>python 모듈 호출 시 전역에 선언된 함수 실행 python 모듈을 호출 했을 때 전역으로 선언되어 있는 함수, 및 변수를 수행한다.</description>
+    </item>
+    
     <item>
       <title>Blog_tab_resize</title>
       <link>https://bsch0111.github.io/post/blog_tab_resize/</link>
