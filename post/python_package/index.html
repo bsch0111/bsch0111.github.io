@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme=""><head>
+    <title> morgan | Blog | Python package란 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="간단하게 올리는 블로그 | bsch0111@naver.com">
+    
+    <link rel="stylesheet"
+          href="https://bsch0111.github.io/css/style.min.82c3b2bf3294af8bca9cc9a9d21c772664c7bec6a0a4a84de87cf7a84f2a1033.css"
+          integrity="sha256-gsOyvzKUr4vKnMmp0hx3JmTHvsagpKhN6Hz3qE8qEDM="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://bsch0111.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bsch0111.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://bsch0111.github.io/post/python_package/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://bsch0111.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python package란"/>
+<meta name="twitter:description" content="Python Package란  참고 : https://docs.python.org/3/tutorial/modules.html#packages “dotted module names”을 이용해서 Python의 모듈을 구조화하는 방법 예를 들어 A."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://bsch0111.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">morgan&#39;s 블로그</a></h3>
+            <div class="description">
+                <p>간단하게 올리는 블로그 | bsch0111@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/bsch0111/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bsch0111@naver.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; morgan | Blog 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Python package란</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Sun, Dec 6, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h1 id="python-package란">Python Package란</h1>
+<ul>
+<li>참고 : <a href="https://docs.python.org/3/tutorial/modules.html#packages">https://docs.python.org/3/tutorial/modules.html#packages</a></li>
+<li>“dotted module names”을 이용해서 Python의 모듈을 구조화하는 방법</li>
+<li>예를 들어 A.B 를 패키지로 표현한다면 B는 A의 하위 모듈임</li>
+</ul>
+<h2 id="python-pacakage을-만드는-방법">Python Pacakage을 만드는 방법</h2>
+<ul>
+<li>ㅁ__init.py__ 을 만들면 해당 폴더를 Package라고 인식함</li>
+<li>ㅁ__init.py__ 은 빈 파일일수 있고, 초기화된코드를 실행하거나 ㅁ__all__ 변수를 사용할 수 있게 해줌
+<ul>
+<li>__all__은 추후에 import * 을 했을 때 사용할 수 있는 변수</li>
+</ul>
+</li>
+</ul>
+<h2 id="구조화된-package-예시">구조화된 Package 예시</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sound/                          Top-level package
+      __init__.py               Initialize the sound package
+      formats/                  Subpackage <span style="color:#66d9ef">for</span> file format conversions
+              __init__.py
+              wavread.py
+              wavwrite.py
+              aiffread.py
+              aiffwrite.py
+              auread.py
+              auwrite.py
+              ...
+      effects/                  Subpackage <span style="color:#66d9ef">for</span> sound effects
+              __init__.py
+              echo.py
+              surround.py
+              reverse.py
+              ...
+      filters/                  Subpackage <span style="color:#66d9ef">for</span> filters
+              __init__.py
+              equalizer.py
+              vocoder.py
+              karaoke.py
+              ...
+</code></pre></div><h3 id="echo-모듈--echopy--의-echofilter-함수-를-호출하는-방법">echo 모듈 ( echo.py ) 의 echofilter 함수 를 호출하는 방법</h3>
+<ol>
+<li>import sound.effects.echo
+<ul>
+<li>다음의 사용과 비슷하다.</li>
+<li>sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)</li>
+</ul>
+</li>
+<li>from sound.effects import echo
+<ul>
+<li>다음의 사용과 비슷하다.</li>
+<li>echofilter(input, output, delay=0.7, atten=4)</li>
+</ul>
+</li>
+<li>from sound.effects.echo import echofilter
+<ul>
+<li>다음의 사용과 비슷하다</li>
+<li>echofilter(input, output, delay=0.7, atten=4)</li>
+</ul>
+</li>
+</ol>
+<h3 id="from-soundeffects-import-을-수행한다면">from sound.effects import *을 수행한다면?</h3>
+<ul>
+<li>이떼는 init.py 파일에 선언된 모듈이름에 대한 리스트만을 사용할 수 있다.</li>
+<li>예를 들어 다음과 같이 ㅁ__init__.py에 작성되어 있을 수 있다.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">__all__ <span style="color:#f92672">=</span> [<span style="color:#960050;background-color:#1e0010">‘</span>echo<span style="color:#960050;background-color:#1e0010">’</span>,<span style="color:#960050;background-color:#1e0010">’</span>surround<span style="color:#960050;background-color:#1e0010">’</span>,<span style="color:#960050;background-color:#1e0010">’</span>reverse<span style="color:#960050;background-color:#1e0010">’</span>]
+</code></pre></div><ul>
+<li>이 의미는 from sound.effects import *을 수행했을 때 echo, surround, reverse 세 개의 모듈을 임포트 하라는 것이다.</li>
+<li>만약 ㅁ__init__.py에 아무 값도 작성되어 있지 않다면 from sound.effects import * 를 수행했을 때 어떤 모듈도 import 되지 않는다</li>
+</ul>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/python/">python</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/python/">python</a><a class="tag" href="/tags/package/">package</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

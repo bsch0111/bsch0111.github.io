@@ -6,7 +6,26 @@
     <description>Recent content in python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 06 Dec 2020 03:08:28 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 15:14:50 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python package란</title>
+      <link>https://bsch0111.github.io/post/python_package/</link>
+      <pubDate>Sun, 06 Dec 2020 15:14:50 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/python_package/</guid>
+      <description>Python Package란  참고 : https://docs.python.org/3/tutorial/modules.html#packages “dotted module names”을 이용해서 Python의 모듈을 구조화하는 방법 예를 들어 A.</description>
+    </item>
+    
+    <item>
+      <title>test_pypl에 패키지 배포하기</title>
+      <link>https://bsch0111.github.io/post/deploy_python_to_test_pypl/</link>
+      <pubDate>Sun, 06 Dec 2020 15:12:00 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/deploy_python_to_test_pypl/</guid>
+      <description>2020/12/05 5. test pypl 에 패키지 배포
+test pypl 에 패키지 배포 과정  PyPI : Python Package Index (PyPI) 1 우선 package 를 만들고, 배포가 가능하도록 README.</description>
+    </item>
+    
     <item>
       <title> __main__ : python 모듈 호출 시 전역에 선언된 함수 수행 문제해결방법</title>
       <link>https://bsch0111.github.io/post/python_global/</link>

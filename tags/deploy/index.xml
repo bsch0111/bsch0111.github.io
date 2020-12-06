@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deploy on </title>
+    <link>https://bsch0111.github.io/tags/deploy/</link>
+    <description>Recent content in deploy on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 06 Dec 2020 15:12:00 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/deploy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>test_pypl에 패키지 배포하기</title>
+      <link>https://bsch0111.github.io/post/deploy_python_to_test_pypl/</link>
+      <pubDate>Sun, 06 Dec 2020 15:12:00 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/deploy_python_to_test_pypl/</guid>
+      <description>2020/12/05 5. test pypl 에 패키지 배포
+test pypl 에 패키지 배포 과정  PyPI : Python Package Index (PyPI) 1 우선 package 를 만들고, 배포가 가능하도록 README.</description>
+    </item>
+    
+  </channel>
+</rss>

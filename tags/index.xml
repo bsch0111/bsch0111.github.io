@@ -6,7 +6,43 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 06 Dec 2020 03:08:28 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 15:14:50 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>package</title>
+      <link>https://bsch0111.github.io/tags/package/</link>
+      <pubDate>Sun, 06 Dec 2020 15:14:50 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://bsch0111.github.io/tags/python/</link>
+      <pubDate>Sun, 06 Dec 2020 15:14:50 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deploy</title>
+      <link>https://bsch0111.github.io/tags/deploy/</link>
+      <pubDate>Sun, 06 Dec 2020 15:12:00 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test pypl</title>
+      <link>https://bsch0111.github.io/tags/test-pypl/</link>
+      <pubDate>Sun, 06 Dec 2020 15:12:00 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/test-pypl/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>__main__</title>
       <link>https://bsch0111.github.io/tags/__main__/</link>
@@ -22,15 +58,6 @@
       <pubDate>Sun, 06 Dec 2020 03:08:28 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/tags/__name__/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://bsch0111.github.io/tags/python/</link>
-      <pubDate>Sun, 06 Dec 2020 03:08:28 +0900</pubDate>
-      
-      <guid>https://bsch0111.github.io/tags/python/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package on </title>
+    <link>https://bsch0111.github.io/tags/package/</link>
+    <description>Recent content in package on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 06 Dec 2020 15:14:50 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/package/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python package란</title>
+      <link>https://bsch0111.github.io/post/python_package/</link>
+      <pubDate>Sun, 06 Dec 2020 15:14:50 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/python_package/</guid>
+      <description>Python Package란  참고 : https://docs.python.org/3/tutorial/modules.html#packages “dotted module names”을 이용해서 Python의 모듈을 구조화하는 방법 예를 들어 A.</description>
+    </item>
+    
+  </channel>
+</rss>
