@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debugging on </title>
+    <link>https://bsch0111.github.io/tags/debugging/</link>
+    <description>Recent content in debugging on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 07 Dec 2020 00:14:34 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>breakpoint 로 디버깅하기</title>
+      <link>https://bsch0111.github.io/post/python-dubuggin/</link>
+      <pubDate>Mon, 07 Dec 2020 00:14:34 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/python-dubuggin/</guid>
+      <description>breakpoint 로 디버깅하기  참고 : https://www.askpython.com/python/built-in-methods/python-breakpoint-function 디버깅(debugging)은 프로그램이 정상 작동할 수 있도록 잠재적 ‘버그’를 제고하는 행위 파이썬에서는 pdb라는 파이썬 표준 라이브러리 모듈을 사용함 예시  import pdb a = None for i in range(10) : if i == 4 : a = &amp;#39;Hi&amp;#39; print(&amp;#39;a is set to&amp;#39;, a ) elif i == 5: pdb.</description>
+    </item>
+    
+  </channel>
+</rss>

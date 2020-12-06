@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme=""><head>
+    <title> morgan | Blog | breakpoint 로 디버깅하기 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="간단하게 올리는 블로그 | bsch0111@naver.com">
+    
+    <link rel="stylesheet"
+          href="https://bsch0111.github.io/css/style.min.82c3b2bf3294af8bca9cc9a9d21c772664c7bec6a0a4a84de87cf7a84f2a1033.css"
+          integrity="sha256-gsOyvzKUr4vKnMmp0hx3JmTHvsagpKhN6Hz3qE8qEDM="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://bsch0111.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bsch0111.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://bsch0111.github.io/post/python-dubuggin/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://bsch0111.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="breakpoint 로 디버깅하기"/>
+<meta name="twitter:description" content="breakpoint 로 디버깅하기  참고 : https://www.askpython.com/python/built-in-methods/python-breakpoint-function 디버깅(debugging)은 프로그램이 정상 작동할 수 있도록 잠재적 ‘버그’를 제고하는 행위 파이썬에서는 pdb라는 파이썬 표준 라이브러리 모듈을 사용함 예시  import pdb a = None for i in range(10) : if i == 4 : a = &#39;Hi&#39; print(&#39;a is set to&#39;, a ) elif i == 5: pdb."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://bsch0111.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">morgan&#39;s 블로그</a></h3>
+            <div class="description">
+                <p>간단하게 올리는 블로그 | bsch0111@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/bsch0111/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bsch0111@naver.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; morgan | Blog 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>breakpoint 로 디버깅하기</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Mon, Dec 7, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h1 id="breakpoint-로-디버깅하기">breakpoint 로 디버깅하기</h1>
+<ul>
+<li>참고 : <a href="https://www.askpython.com/python/built-in-methods/python-breakpoint-function">https://www.askpython.com/python/built-in-methods/python-breakpoint-function</a></li>
+<li>디버깅(debugging)은 프로그램이 정상 작동할 수 있도록 잠재적 ‘버그’를 제고하는 행위</li>
+<li>파이썬에서는 pdb라는 파이썬 표준 라이브러리 모듈을 사용함</li>
+<li>예시</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">import</span> pdb
+
+a <span style="color:#f92672">=</span> None
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>) : 
+    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span> :
+        a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hi&#39;</span>
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;a is set to&#39;</span>, a )
+    <span style="color:#66d9ef">elif</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>:
+        pdb<span style="color:#f92672">.</span>set_trace()
+
+</code></pre></div><ul>
+<li>Output</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>Users<span style="color:#f92672">/</span>bsch0111<span style="color:#f92672">/</span>Desktop<span style="color:#f92672">/</span>git<span style="color:#f92672">-</span>repo<span style="color:#f92672">/</span>python<span style="color:#f92672">-</span>example<span style="color:#f92672">/</span>pdb<span style="color:#f92672">-</span>example<span style="color:#f92672">.</span>py(<span style="color:#ae81ff">4</span>)<span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>()
+<span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>) :
+(Pdb) p a 
+<span style="color:#e6db74">&#39;Hi&#39;</span>
+(Pdb) p i
+<span style="color:#ae81ff">5</span>
+(Pdb) exit()
+</code></pre></div><ul>
+<li>pdb.set_trace() : 해당 위치에서 모든 변수들의 활동을 볼 수 있음</li>
+<li>p [해당 위치에서 확인할 변수]</li>
+<li>그러나, set_trace()는 종종 시간을 많이 소비하는 경향이 있음</li>
+<li>의심이 되는 부분에서 계속 확인해봐야함</li>
+<li>sys 모듈을 통해 부르는 breakpoint()를 사용하면 된다.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#e6db74">``</span><span style="color:#960050;background-color:#1e0010">`</span>python
+
+<span style="color:#f92672">import</span> pdb
+
+a <span style="color:#f92672">=</span> None
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>) : 
+    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span> :
+        a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hi&#39;</span>
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;a is set to&#39;</span>, a )
+    <span style="color:#66d9ef">elif</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>:
+        breakpoint()
+
+</code></pre></div><ul>
+<li>동일하게 pub 세션으로 넘어가는 것을 확인할 수있다</li>
+<li>import pdb 와 pdb.set_trace()를 안해도 된다.</li>
+</ul>
+<h2 id="pdb-명령">pdb 명령</h2>
+<p>참고 : <a href="http://pythonstudy.xyz/python/article/505-Python-%EB%94%94%EB%B2%84%EA%B9%85-PDB">http://pythonstudy.xyz/python/article/505-Python-%EB%94%94%EB%B2%84%EA%B9%85-PDB</a></p>
+<p>다음은 자주 사용되는 PDB 명령들을 요약한 것이다. 명령어를 단어 전체를 사용해도 되지만, 보통 약어로 앞의 한 글자만 사용할 수 있다. 즉, next 대신 n 을 사용할 수 있다.
+PDB 명령어	실행내용
+help	도움말
+next	다음 문장으로 이동
+print	변수값 화면에 표시
+list	소스코드 리스트 출력. 현재 위치 화살표로 표시됨
+where	콜스택 출력
+continue	계속 실행. 다음 중단점에 멈추거나 중단점 없으면 끝까지 실행
+step	Step Into 하여 함수 내부로 들어감
+return	현재 함수의 리턴 직전까지 실행
+!변수명 = 값	변수에 값 재설정</p>
+<p>c - continue로 다음에 설정 된 중단점으로 바로 이동
+n - 다음 줄로 이동 함
+r - 현재 함수가 return 될 때까지 계속 실행
+l - 현재 라인을 포함하여 위 아래로 11줄의 코드를 출력함</p>
+<h2 id="pdbset_trace-를-사용하지-않고-breakpoint를-사용하는-이유">pdb.set_trace() 를 사용하지 않고 breakpoint()를 사용하는 이유</h2>
+<p>참고 : <a href="http://pythonstudy.xyz/python/article/505-Python-%EB%94%94%EB%B2%84%EA%B9%85-PDB">http://pythonstudy.xyz/python/article/505-Python-%EB%94%94%EB%B2%84%EA%B9%85-PDB</a></p>
+<ul>
+<li>잘 모르겠다. 그냥 쓰자</li>
+</ul>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/python/">python</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/python/">python</a><a class="tag" href="/tags/debug/">debug</a><a class="tag" href="/tags/debugging/">debugging</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
