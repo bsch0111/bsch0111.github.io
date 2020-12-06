@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme=""><head>
-    <title> morgan | Blog | Branch_detach </title>
+    <title> morgan | Blog | 부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제 </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -32,9 +32,8 @@
             integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
             crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Branch_detach"/>
-<meta name="twitter:description" content="2020/12/05 1. submodule 레포지토리 브런치 포인트 위치
-부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제 commit 81e8e894f15f76aa85ba72846f125b33007c7a30 (HEAD) Author: bsch0111 &lt;bsch0111@naver."/>
+<meta name="twitter:title" content="부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제"/>
+<meta name="twitter:description" content="부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제  git log 커밋 포인터 중에서 HEAD 와 origin/main 이 다른 것을 확인할 수 있다  commit 81e8e894f15f76aa85ba72846f125b33007c7a30 (HEAD) Author: bsch0111 &lt;bsch0111@naver."/>
 
 </head>
 <body><div class="sidebar animated fadeInDown">
@@ -109,7 +108,7 @@
         <div class="post-content">
 
             <div class="post-title">
-                <h3>Branch_detach</h3>
+                <h3>부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제</h3>
                 
                     <div class="info">
                         <em class="fas fa-calendar-day"></em>
@@ -120,8 +119,11 @@
                 
             </div>
 
-            <p>2020/12/05 1. submodule 레포지토리 브런치 포인트 위치</p>
-<h1 id="부모-레포지토리와-submodule-레포지토리의-포인트가-달라서-생기는-문제">부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제</h1>
+            <h1 id="부모-레포지토리와-submodule-레포지토리의-포인트가-달라서-생기는-문제">부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제</h1>
+<ul>
+<li>git log</li>
+<li>커밋 포인터 중에서 HEAD 와 origin/main 이 다른 것을 확인할 수 있다</li>
+</ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">commit 81e8e894f15f76aa85ba72846f125b33007c7a30 <span style="color:#f92672">(</span>HEAD<span style="color:#f92672">)</span>
 Author: bsch0111 &lt;bsch0111@naver.com&gt;
 Date:   Sat Dec <span style="color:#ae81ff">5</span> 00:44:32 <span style="color:#ae81ff">2020</span> +0900

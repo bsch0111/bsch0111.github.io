@@ -45,7 +45,7 @@ test pypl 에 패키지 배포 과정  PyPI : Python Package Index (PyPI) 1 우�
     </item>
     
     <item>
-      <title>Blog_tab_resize</title>
+      <title>hugo anatole 테마 만지기</title>
       <link>https://bsch0111.github.io/post/blog_tab_resize/</link>
       <pubDate>Sat, 05 Dec 2020 01:47:19 +0900</pubDate>
       
@@ -54,31 +54,21 @@ test pypl 에 패키지 배포 과정  PyPI : Python Package Index (PyPI) 1 우�
     </item>
     
     <item>
-      <title>Branch_detach</title>
+      <title>부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제</title>
       <link>https://bsch0111.github.io/post/branch_detach/</link>
       <pubDate>Sat, 05 Dec 2020 01:28:20 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/post/branch_detach/</guid>
-      <description>2020/12/05 1. submodule 레포지토리 브런치 포인트 위치
-부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제 commit 81e8e894f15f76aa85ba72846f125b33007c7a30 (HEAD) Author: bsch0111 &amp;lt;bsch0111@naver.</description>
+      <description>부모 레포지토리와 submodule 레포지토리의 포인트가 달라서 생기는 문제  git log 커밋 포인터 중에서 HEAD 와 origin/main 이 다른 것을 확인할 수 있다  commit 81e8e894f15f76aa85ba72846f125b33007c7a30 (HEAD) Author: bsch0111 &amp;lt;bsch0111@naver.</description>
     </item>
     
     <item>
-      <title>Problem When Repository Has Submodule</title>
+      <title>Clone 할 레포지토리가 submodule을 포함하고 있을 떄</title>
       <link>https://bsch0111.github.io/post/problem-when-repository-has-submodule/</link>
       <pubDate>Fri, 04 Dec 2020 23:55:06 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/post/problem-when-repository-has-submodule/</guid>
       <description>Clone 할 레포지토리가 submodule을 포함하고 있을 떄 문제점  이전에 로컬 저장소에서 push 할 때 하나의 저장소 밑에 하나의 저장소가 submodule로 되어 있음  궁금증  다시 클론해서 가져올 때 submodule 이 지정되어 있는가?</description>
-    </item>
-    
-    <item>
-      <title>What Is Git</title>
-      <link>https://bsch0111.github.io/post/what-is-git/</link>
-      <pubDate>Fri, 04 Dec 2020 23:37:52 +0900</pubDate>
-      
-      <guid>https://bsch0111.github.io/post/what-is-git/</guid>
-      <description>GIT에 대한 궁금증  Github와 Git의 차이 &amp;amp; .git 폴더가 어떤 일을 하는지  git의 발전방향</description>
     </item>
     
     <item>
@@ -91,7 +81,7 @@ test pypl 에 패키지 배포 과정  PyPI : Python Package Index (PyPI) 1 우�
     </item>
     
     <item>
-      <title>Mac book Development Setting</title>
+      <title>초기 맥북 개발환경 구성</title>
       <link>https://bsch0111.github.io/post/development-setting/</link>
       <pubDate>Fri, 04 Dec 2020 01:14:14 +0900</pubDate>
       
@@ -100,7 +90,7 @@ test pypl 에 패키지 배포 과정  PyPI : Python Package Index (PyPI) 1 우�
     </item>
     
     <item>
-      <title>Python_oop</title>
+      <title>PYTHON과 객체지향프로그래밍 - 1</title>
       <link>https://bsch0111.github.io/post/python_oop/</link>
       <pubDate>Thu, 03 Dec 2020 00:43:40 +0900</pubDate>
       

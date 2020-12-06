@@ -113,11 +113,6 @@
   </url>
   
   <url>
-    <loc>https://bsch0111.github.io/post/branch_detach/</loc>
-    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bsch0111.github.io/tags/detach/</loc>
     <lastmod>2020-12-05T01:28:20+09:00</lastmod>
   </url>
@@ -133,8 +128,8 @@
   </url>
   
   <url>
-    <loc>https://bsch0111.github.io/tags/git/</loc>
-    <lastmod>2020-12-04T23:55:06+09:00</lastmod>
+    <loc>https://bsch0111.github.io/post/branch_detach/</loc>
+    <lastmod>2020-12-05T01:28:20+09:00</lastmod>
   </url>
   
   <url>
@@ -143,8 +138,8 @@
   </url>
   
   <url>
-    <loc>https://bsch0111.github.io/post/what-is-git/</loc>
-    <lastmod>2020-12-04T23:37:52+09:00</lastmod>
+    <loc>https://bsch0111.github.io/tags/git/</loc>
+    <lastmod>2020-12-04T23:55:06+09:00</lastmod>
   </url>
   
   <url>
@@ -153,12 +148,12 @@
   </url>
   
   <url>
-    <loc>https://bsch0111.github.io/post/development-setting/</loc>
+    <loc>https://bsch0111.github.io/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%EA%B5%AC%EC%84%B1/</loc>
     <lastmod>2020-12-04T01:14:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bsch0111.github.io/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%EA%B5%AC%EC%84%B1/</loc>
+    <loc>https://bsch0111.github.io/post/development-setting/</loc>
     <lastmod>2020-12-04T01:14:14+09:00</lastmod>
   </url>
   
