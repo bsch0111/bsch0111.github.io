@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme=""><head>
-    <title> morgan | Blog | Categories </title>
+    <title> morgan | Blog | Python class 변수 , 인스턴스 변수 </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -21,10 +21,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://bsch0111.github.io/categories/">
+    <link rel="canonical" href="https://bsch0111.github.io/post/python_variables/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="https://bsch0111.github.io/categories/index.xml" title="" />
     
     
     
@@ -33,8 +32,9 @@
             integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
             crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content="간단하게 올리는 블로그 | bsch0111@naver.com"/>
+<meta name="twitter:title" content="Python class 변수 , 인스턴스 변수"/>
+<meta name="twitter:description" content="class 변수 , 인스턴스 변수 참고 : http://pythonstudy.xyz/python/article/19-%ED%81%B4%EB%9E%98%EC%8A%A4
+class Rectangle: count = 0 # 클래스 변수 # 초기자(initializer) def __init__(self, width, height): # self."/>
 
 </head>
 <body><div class="sidebar animated fadeInDown">
@@ -105,54 +105,80 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive animated fadeInDown">
-        <ul class="list-with-title">
-            
-                <div class="listing-title">2020</div>
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Python class 변수 , 인스턴스 변수</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/categories/python/" title="python">python</a>
-                                <div class="post-time"><span class="date">Dec 8</span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Tue, Dec 8, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/categories/blog/" title="blog">blog</a>
-                                <div class="post-time"><span class="date">Dec 5</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/categories/git/" title="git">git</a>
-                                <div class="post-time"><span class="date">Dec 5</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" title="프로그래밍">프로그래밍</a>
-                                <div class="post-time"><span class="date">Dec 3</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/categories/%EA%B3%A0%EC%96%91%EC%9D%B4/" title="고양이">고양이</a>
-                                <div class="post-time"><span class="date">Dec 1</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+
+            <h1 id="class-변수--인스턴스-변수">class 변수 , 인스턴스 변수</h1>
+<p>참고 : <a href="http://pythonstudy.xyz/python/article/19-%ED%81%B4%EB%9E%98%EC%8A%A4">http://pythonstudy.xyz/python/article/19-%ED%81%B4%EB%9E%98%EC%8A%A4</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Rectangle</span>:
+    count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>  <span style="color:#75715e"># 클래스 변수</span>
+ 
+    <span style="color:#75715e"># 초기자(initializer)</span>
+    <span style="color:#66d9ef">def</span> __init__(self, width, height):
+        <span style="color:#75715e"># self.* : 인스턴스변수</span>
+        self<span style="color:#f92672">.</span>width <span style="color:#f92672">=</span> width
+        self<span style="color:#f92672">.</span>height <span style="color:#f92672">=</span> height
+        Rectangle<span style="color:#f92672">.</span>count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+ 
+    <span style="color:#75715e"># 메서드</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calcArea</span>(self):
+        area <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>width <span style="color:#f92672">*</span> self<span style="color:#f92672">.</span>height
+        <span style="color:#66d9ef">return</span> area
+</code></pre></div><ul>
+<li>클래스 변수 : 클래스 하나가 공통으로 사용하는 변수</li>
+<li>인스턴스 변수 : 각 인스턴스가 개별적으로 생성해서 사용하는 변수</li>
+</ul>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/python/">python</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/python/">python</a><a class="tag" href="/tags/class-variable/">class variable</a><a class="tag" href="/tags/instance-variable/">instance variable</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
     </div>
+
 
         </div>
     </div>

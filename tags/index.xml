@@ -6,7 +6,61 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 07 Dec 2020 00:14:34 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Dec 2020 02:17:16 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>methods</title>
+      <link>https://bsch0111.github.io/tags/methods/</link>
+      <pubDate>Tue, 08 Dec 2020 02:17:16 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://bsch0111.github.io/tags/python/</link>
+      <pubDate>Tue, 08 Dec 2020 02:17:16 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>class variable</title>
+      <link>https://bsch0111.github.io/tags/class-variable/</link>
+      <pubDate>Tue, 08 Dec 2020 02:15:47 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/class-variable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>instance variable</title>
+      <link>https://bsch0111.github.io/tags/instance-variable/</link>
+      <pubDate>Tue, 08 Dec 2020 02:15:47 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/instance-variable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>init</title>
+      <link>https://bsch0111.github.io/tags/init/</link>
+      <pubDate>Tue, 08 Dec 2020 02:14:02 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/init/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>new</title>
+      <link>https://bsch0111.github.io/tags/new/</link>
+      <pubDate>Tue, 08 Dec 2020 02:14:02 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/new/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>debug</title>
       <link>https://bsch0111.github.io/tags/debug/</link>
@@ -22,15 +76,6 @@
       <pubDate>Mon, 07 Dec 2020 00:14:34 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/tags/debugging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://bsch0111.github.io/tags/python/</link>
-      <pubDate>Mon, 07 Dec 2020 00:14:34 +0900</pubDate>
-      
-      <guid>https://bsch0111.github.io/tags/python/</guid>
       <description></description>
     </item>
     
