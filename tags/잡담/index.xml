@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>잡담 on </title>
+    <link>https://bsch0111.github.io/tags/%EC%9E%A1%EB%8B%B4/</link>
+    <description>Recent content in 잡담 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 11 Dec 2020 00:30:19 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/%EC%9E%A1%EB%8B%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>나의 현재 수준과 앞으로 하고 싶은 내용..</title>
+      <link>https://bsch0111.github.io/post/sometings_that_i_want/</link>
+      <pubDate>Fri, 11 Dec 2020 00:30:19 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/sometings_that_i_want/</guid>
+      <description>현재 상태 데이터 엔지니어가 되고 싶다.
+지금은 거의 모른다고 말할 수 있을거 같다.</description>
+    </item>
+    
+  </channel>
+</rss>

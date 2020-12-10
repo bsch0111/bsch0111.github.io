@@ -6,7 +6,17 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 08 Dec 2020 02:17:16 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2020 00:30:19 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>나의 현재 수준과 앞으로 하고 싶은 내용..</title>
+      <link>https://bsch0111.github.io/post/sometings_that_i_want/</link>
+      <pubDate>Fri, 11 Dec 2020 00:30:19 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/sometings_that_i_want/</guid>
+      <description>현재 상태 데이터 엔지니어가 되고 싶다.
+지금은 거의 모른다고 말할 수 있을거 같다.</description>
+    </item>
+    
     <item>
       <title>인스턴스 메소드, 정적 메소드, 클래스 메서드</title>
       <link>https://bsch0111.github.io/post/python_methods/</link>
