@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pandas on </title>
+    <link>https://bsch0111.github.io/categories/pandas/</link>
+    <description>Recent content in pandas on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 12 Dec 2020 00:35:18 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/categories/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pandas 결측값</title>
+      <link>https://bsch0111.github.io/post/python_null/</link>
+      <pubDate>Sat, 12 Dec 2020 00:35:18 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/python_null/</guid>
+      <description>pandas 결측값 참고 : https://m.blog.naver.com/youji4ever/221791455668
+결측값 종류(https://purplechip.tistory.com/5)   None : Python 코드에서 누락된 데이터에 자주 사용되는 Python singleton 객체 (NULL이며 object 타입에 속함)</description>
+    </item>
+    
+  </channel>
+</rss>

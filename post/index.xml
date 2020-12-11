@@ -6,7 +6,17 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 11 Dec 2020 00:30:19 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Dec 2020 00:35:18 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pandas 결측값</title>
+      <link>https://bsch0111.github.io/post/python_null/</link>
+      <pubDate>Sat, 12 Dec 2020 00:35:18 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/python_null/</guid>
+      <description>pandas 결측값 참고 : https://m.blog.naver.com/youji4ever/221791455668
+결측값 종류(https://purplechip.tistory.com/5)   None : Python 코드에서 누락된 데이터에 자주 사용되는 Python singleton 객체 (NULL이며 object 타입에 속함)</description>
+    </item>
+    
     <item>
       <title>나의 현재 수준과 앞으로 하고 싶은 내용..</title>
       <link>https://bsch0111.github.io/post/sometings_that_i_want/</link>
