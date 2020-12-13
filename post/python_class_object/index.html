@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme=""><head>
-    <title> morgan | Blog | python 클래스 인스턴스를 생성할 때 함수(init,new) 호출 순서  </title>
+    <title> morgan | Blog | python 클래스를 정의할 때 object를 붙이는 것 </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://bsch0111.github.io/post/python_init_new/">
+    <link rel="canonical" href="https://bsch0111.github.io/post/python_class_object/">
 
     
     
@@ -32,8 +32,9 @@
             integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
             crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="python 클래스 인스턴스를 생성할 때 함수(init,new) 호출 순서 "/>
-<meta name="twitter:description" content="python 클래스 인스턴스를 생성할 때 함수 호출 순서 참고 : https://wikidocs."/>
+<meta name="twitter:title" content="python 클래스를 정의할 때 object를 붙이는 것"/>
+<meta name="twitter:description" content="python 클래스를 정의할 때 object를 붙이는 것 참고 :https://hashcode.co.kr/questions/487/object%EB%8A%94-%EC%99%9C-%EC%83%81%EC%86%8D%EB%B0%9B%EB%8A%94-%EA%B1%B4%EA%B0%80%EC%9A%94
+# python 3."/>
 
 </head>
 <body><div class="sidebar animated fadeInDown">
@@ -120,30 +121,37 @@
         <div class="post-content">
 
             <div class="post-title">
-                <h3>python 클래스 인스턴스를 생성할 때 함수(init,new) 호출 순서 </h3>
+                <h3>python 클래스를 정의할 때 object를 붙이는 것</h3>
                 
                     <div class="info">
                         <em class="fas fa-calendar-day"></em>
-                        <span class="date">Tue, Dec 8, 2020</span>
+                        <span class="date">Sun, Dec 13, 2020</span>
                         <em class="fas fa-stopwatch"></em>
                         <span class="reading-time"></span>
                     </div>
                 
             </div>
 
-            <h1 id="python-클래스-인스턴스를-생성할-때-함수-호출-순서">python 클래스 인스턴스를 생성할 때 함수 호출 순서</h1>
-<p>참고 : <a href="https://wikidocs.net/16071">https://wikidocs.net/16071</a></p>
-<ol>
-<li>o <strong>new</strong> : 클래스 자체를 받으며 할당하게되고</li>
-<li>o <strong>init</strong> : 객체의 내부에서 사용할 속성을 초기화</li>
-</ol>
+            <h1 id="python-클래스를-정의할-때-object를-붙이는-것">python 클래스를 정의할 때 object를 붙이는 것</h1>
+<p>참고 :https://hashcode.co.kr/questions/487/object%EB%8A%94-%EC%99%9C-%EC%83%81%EC%86%8D%EB%B0%9B%EB%8A%94-%EA%B1%B4%EA%B0%80%EC%9A%94</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># python 3.x</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>(object) <span style="color:#75715e"># new-style 클래스</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> <span style="color:#75715e"># new-style 클래스</span>
+
+<span style="color:#75715e"># python 2.x</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>(object) : new<span style="color:#f92672">-</span>style <span style="color:#960050;background-color:#1e0010">클래스</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> : Old<span style="color:#f92672">-</span>style <span style="color:#960050;background-color:#1e0010">클래스</span>
+
+</code></pre></div><p>둘 다 클래스를 선언하는 방법이여서 python 3.x 버전에서는 문제가 일어나지 않는다.  그러나 2.x 버전에서는 두 클래스 선언을 old와 new 스타일로 구분짓는다. 그래서 특별이 문제를 만들지 않기 위해선  두 버전에서 모두 new-style 클래스인 class MyClass(object) 와 같이 생성해주는게 좋다.</p>
 
         </div>
         <div class="post-footer">
             <div class="info">
                 <span class="separator"><a class="category" href="/categories/python/">python</a></span>
 
-                <span class="separator"><a class="tag" href="/tags/python/">python</a><a class="tag" href="/tags/init/">init</a><a class="tag" href="/tags/new/">new</a></span>
+                <span class="separator"><a class="tag" href="/tags/python/">python</a></span>
 
             </div>
         </div>

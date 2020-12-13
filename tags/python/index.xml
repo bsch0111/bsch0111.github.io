@@ -6,7 +6,17 @@
     <description>Recent content in python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 08 Dec 2020 02:17:16 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 22:15:31 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python 클래스를 정의할 때 object를 붙이는 것</title>
+      <link>https://bsch0111.github.io/post/python_class_object/</link>
+      <pubDate>Sun, 13 Dec 2020 22:15:31 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/python_class_object/</guid>
+      <description>python 클래스를 정의할 때 object를 붙이는 것 참고 :https://hashcode.co.kr/questions/487/object%EB%8A%94-%EC%99%9C-%EC%83%81%EC%86%8D%EB%B0%9B%EB%8A%94-%EA%B1%B4%EA%B0%80%EC%9A%94
+# python 3.</description>
+    </item>
+    
     <item>
       <title>인스턴스 메소드, 정적 메소드, 클래스 메서드</title>
       <link>https://bsch0111.github.io/post/python_methods/</link>

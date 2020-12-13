@@ -6,7 +6,16 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 12 Dec 2020 00:35:18 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 22:15:31 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python</title>
+      <link>https://bsch0111.github.io/tags/python/</link>
+      <pubDate>Sun, 13 Dec 2020 22:15:31 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>missing-data</title>
       <link>https://bsch0111.github.io/tags/missing-data/</link>
@@ -40,15 +49,6 @@
       <pubDate>Tue, 08 Dec 2020 02:17:16 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/tags/methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://bsch0111.github.io/tags/python/</link>
-      <pubDate>Tue, 08 Dec 2020 02:17:16 +0900</pubDate>
-      
-      <guid>https://bsch0111.github.io/tags/python/</guid>
       <description></description>
     </item>
     
