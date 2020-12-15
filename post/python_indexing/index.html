@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme=""><head>
+    <title> morgan | Blog | 인덱싱과 슬라이스 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="간단하게 올리는 블로그 | bsch0111@naver.com">
+    
+    <link rel="stylesheet"
+          href="https://bsch0111.github.io/css/style.min.82c3b2bf3294af8bca9cc9a9d21c772664c7bec6a0a4a84de87cf7a84f2a1033.css"
+          integrity="sha256-gsOyvzKUr4vKnMmp0hx3JmTHvsagpKhN6Hz3qE8qEDM="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://bsch0111.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bsch0111.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://bsch0111.github.io/post/python_indexing/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://bsch0111.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="인덱싱과 슬라이스"/>
+<meta name="twitter:description" content="인덱서와 슬라이스 슬라이스 python 에서는 연속되는 여러개의 요소를 가진 자료형을 시퀀스 자료형(Sequence Types)이라고 합니다."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://bsch0111.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">morgan&#39;s 블로그</a></h3>
+            <div class="description">
+                <p>간단하게 올리는 블로그 | bsch0111@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/bsch0111/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bsch0111@naver.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; morgan | Blog 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/categories/"
+                        
+                   title="">Categories</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>인덱싱과 슬라이스</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Tue, Dec 15, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h1 id="인덱서와-슬라이스">인덱서와 슬라이스</h1>
+<h2 id="슬라이스">슬라이스</h2>
+<p>python 에서는 연속되는 여러개의 요소를 가진 자료형을 <a href="https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range">시퀀스 자료형(Sequence Types)</a>이라고 합니다. 그리고 이 시퀀스 자료형들은 자신의 하위요소에 접근하기 위해 슬라이스(Slice)를 문법을 사용한다.</p>
+<p>배열 x에 사용하는 슬라이스 문법은 다음과 같다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x[start_index:stop_index:step]
+</code></pre></div><ul>
+<li>수치데이터를 다루기 위해 개발된 NumPy 라이브러리는 Python 배열의 슬라이스 구문을 따르고 있으며, Numpy 배열을 기초로 만들어진 Pandas 라이브러리에서도 동일하게 슬라이스 구분을 사용할 수 있다.</li>
+<li>요약하자면 배열, 문자열, Numpy 배열, Pandas의 DataFrame 에서 슬라이스 구문을 사용할 수 있다.</li>
+<li>파이썬의 슬라이스 구문이 같다는 것이지 내부 동작까지 같은건 아니다
+<ul>
+<li>배열의 슬라이스, DataFrame의 슬라이스는 다른 결과를 나타낼 수 있다.</li>
+<li>값 복사, 주소 복사 차이 : 배열과 DataFrame 의 슬라이스 배열의 값을 변경해본뒤 원본 배열과 DataFrame 의 값을 확인해보면 알수 있다</li>
+</ul>
+</li>
+</ul>
+<h3 id="1차원-배열-dataframe-슬라이스">1차원 배열 DataFrame 슬라이스</h3>
+<ul>
+<li>x[start:stop:step] 에서 값이 지정되지 않으면 기본으로 start = 0, stop = 배열 길이, step = 1로 지정</li>
+<li>step 은 다음 인덱스를 선택하는 크기</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+x <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">10</span>])
+
+<span style="color:#66d9ef">print</span>(x[:<span style="color:#ae81ff">5</span>]) <span style="color:#75715e"># 처음부터 인덱스 4까지 (=처음부터 5개 요소)</span>
+<span style="color:#66d9ef">print</span>(x[<span style="color:#ae81ff">5</span>:]) <span style="color:#75715e"># 인덱스 5부터 끝까지</span>
+<span style="color:#66d9ef">print</span>(x[<span style="color:#ae81ff">4</span>:<span style="color:#ae81ff">7</span>])<span style="color:#75715e"># 인덱스 4부터 6까지</span>
+<span style="color:#66d9ef">print</span>(x[::<span style="color:#ae81ff">2</span>]) <span style="color:#75715e"># 처음부터 요소를 하나씩 건너 뛴 배열 구성(= step인 2 배열 출력)</span>
+<span style="color:#66d9ef">print</span>(x[<span style="color:#ae81ff">1</span>::<span style="color:#ae81ff">2</span>])<span style="color:#75715e"># 1부터 시작해서 step이 2인 배열</span>
+
+<span style="color:#75715e"># step이 음수일 떄는 start와 stop의 기본값이 서로 바뀐다.</span>
+<span style="color:#66d9ef">print</span>(x[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) <span style="color:#75715e">#  모든 요소를 거꾸로 나열</span>
+<span style="color:#66d9ef">print</span>(x[<span style="color:#ae81ff">9</span>::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) <span style="color:#75715e"># 인덱스 9부터 step 을 -1로 처음까지 나열</span>
+<span style="color:#66d9ef">print</span>(x[<span style="color:#ae81ff">5</span>::<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>]) <span style="color:#75715e"># 인덱스 5부터 step 을 -2로 처음까지 나열</span>
+
+</code></pre></div><ul>
+<li>stop 이 정수로 명시된 경우 포함하지 않음</li>
+<li>기본 인덱스가 아니라 지정한 인덱스에도 잘 사용할 수 있다.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+x <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">10</span>],index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;b&#39;</span>,<span style="color:#e6db74">&#39;c&#39;</span>,<span style="color:#e6db74">&#39;d&#39;</span>,<span style="color:#e6db74">&#39;e&#39;</span>,<span style="color:#e6db74">&#39;f&#39;</span>,<span style="color:#e6db74">&#39;g&#39;</span>,<span style="color:#e6db74">&#39;h&#39;</span>,<span style="color:#e6db74">&#39;i&#39;</span>,<span style="color:#e6db74">&#39;j&#39;</span>])
+
+<span style="color:#66d9ef">print</span>(x[:<span style="color:#e6db74">&#39;f&#39;</span>]) <span style="color:#75715e"># 위의 기본 인덱스를 사용했을 때와 결과가 다르다! (생각)</span>
+<span style="color:#66d9ef">print</span>(x[<span style="color:#e6db74">&#39;f&#39;</span>:]) 
+<span style="color:#66d9ef">print</span>(x[<span style="color:#e6db74">&#39;e&#39;</span>:<span style="color:#e6db74">&#39;h&#39;</span> ]) <span style="color:#75715e"># 위의 기본 인덱스를 사용했을 때와 결과가 다르다! (생각)</span>
+<span style="color:#66d9ef">print</span>(x[::<span style="color:#ae81ff">2</span>]) 
+<span style="color:#66d9ef">print</span>(x[<span style="color:#e6db74">&#39;b&#39;</span>::<span style="color:#ae81ff">2</span>])
+
+
+<span style="color:#66d9ef">print</span>(x[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) 
+<span style="color:#66d9ef">print</span>(x[<span style="color:#e6db74">&#39;j&#39;</span>::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) 
+<span style="color:#66d9ef">print</span>(x[<span style="color:#e6db74">&#39;f&#39;</span>::<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>]) 
+
+</code></pre></div><ul>
+<li>상단의 기본인덱스를 묵시적 인덱스</li>
+<li>하단의 지정한 인덱스를 명시적 인덱스</li>
+</ul>
+<h3 id="인덱서-loc-iloc">인덱서 loc, iloc</h3>
+<ul>
+<li>위의 표기처럼 사용하면 혼동을 줄수 있어서 인덱서를 이용해서 어떤 인덱스를 사용할것인지 표기한다.</li>
+<li>loc : 명시적 인덱서</li>
+<li>iloc : 묵시적 인덱서</li>
+<li>아래를 이용해 비교해보자</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+x <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">10</span>],index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;b&#39;</span>,<span style="color:#e6db74">&#39;c&#39;</span>,<span style="color:#e6db74">&#39;d&#39;</span>,<span style="color:#e6db74">&#39;e&#39;</span>,<span style="color:#e6db74">&#39;f&#39;</span>,<span style="color:#e6db74">&#39;g&#39;</span>,<span style="color:#e6db74">&#39;h&#39;</span>,<span style="color:#e6db74">&#39;i&#39;</span>,<span style="color:#e6db74">&#39;j&#39;</span>])
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;A : &#39;</span> , x[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>]) <span style="color:#75715e"># 묵시적 인덱스</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;B : &#39;</span> , x<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>]) <span style="color:#75715e"># 묵시적 인덱스</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;C : &#39;</span> , x[<span style="color:#e6db74">&#39;b&#39;</span>:<span style="color:#e6db74">&#39;d&#39;</span>]) <span style="color:#75715e"># 명시적 인덱스</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;D : &#39;</span> , x<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#39;b&#39;</span>:<span style="color:#e6db74">&#39;d&#39;</span>]) <span style="color:#75715e"># 명시적 인덱스</span>
+
+</code></pre></div><h3 id="2차원-배열-dataframe-슬라이스">2차원 배열 DataFrame 슬라이스</h3>
+<ul>
+<li>x.loc[::,::] 앞에는 행(row), 뒤에는 열(column)을 대상으로 슬라이스를 수행</li>
+<li>x.iloc[::,::] 앞에는 행(row), 뒤에는 열(column)을 대상으로 슬라이스를 수행</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+x <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>],
+       [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">8</span>],
+       [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">7</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;A&#39;</span>,<span style="color:#e6db74">&#39;B&#39;</span>,<span style="color:#e6db74">&#39;C&#39;</span>,<span style="color:#e6db74">&#39;D&#39;</span>])
+
+
+<span style="color:#66d9ef">print</span>(x<span style="color:#f92672">.</span>iloc[:<span style="color:#ae81ff">2</span>,:<span style="color:#ae81ff">2</span>]) <span style="color:#75715e"># 두 개의 행, 두 개의 열</span>
+<span style="color:#66d9ef">print</span>(x<span style="color:#f92672">.</span>iloc[:<span style="color:#ae81ff">2</span>,::<span style="color:#ae81ff">2</span>]) <span style="color:#75715e"># 두 개의 행, [&#39;A&#39;, &#39;C&#39;] 열만 출력</span>
+<span style="color:#66d9ef">print</span>(x<span style="color:#f92672">.</span>iloc[:<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">0</span>]) <span style="color:#75715e"># 두 개의 행, 0 번째 열</span>
+
+<span style="color:#66d9ef">print</span>(x<span style="color:#f92672">.</span>loc[:<span style="color:#ae81ff">1</span>,:<span style="color:#e6db74">&#39;B&#39;</span>]) <span style="color:#75715e"># 두 개의 행, 두 개의 열</span>
+<span style="color:#66d9ef">print</span>(x<span style="color:#f92672">.</span>loc[:<span style="color:#ae81ff">1</span>,::<span style="color:#ae81ff">2</span>]) <span style="color:#75715e"># 두 개의 행, [&#39;A&#39;, &#39;C&#39;] 열만 출력</span>
+<span style="color:#66d9ef">print</span>(x<span style="color:#f92672">.</span>loc[:<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#39;A&#39;</span>]) <span style="color:#75715e"># 두 개의 행, 0 번째 열</span>
+</code></pre></div><h3 id="2차원-배열-dataframe-열조회">2차원 배열 DataFrame 열조회</h3>
+<ul>
+<li>하나의 열 조회
+<ul>
+<li>x[&lsquo;열이름&rsquo;]</li>
+<li>x.loc[:,&lsquo;열이름&rsquo;]</li>
+</ul>
+</li>
+<li>두개 이상의 열 조회
+<ul>
+<li>x[&lsquo;열 배열&rsquo;]</li>
+<li>x.loc[:,&lsquo;열 배열&rsquo;]</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+x <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>],
+       [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">8</span>],
+       [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">7</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;A&#39;</span>,<span style="color:#e6db74">&#39;B&#39;</span>,<span style="color:#e6db74">&#39;C&#39;</span>,<span style="color:#e6db74">&#39;D&#39;</span>])
+
+<span style="color:#75715e"># A 열 조회</span>
+<span style="color:#66d9ef">print</span>(x[<span style="color:#e6db74">&#39;A&#39;</span>])
+<span style="color:#66d9ef">print</span>(x<span style="color:#f92672">.</span>loc[:,<span style="color:#e6db74">&#39;A&#39;</span>])
+
+<span style="color:#75715e"># B, D 열 조회</span>
+<span style="color:#66d9ef">print</span>(x[[<span style="color:#e6db74">&#39;B&#39;</span>,<span style="color:#e6db74">&#39;D&#39;</span>]])
+<span style="color:#66d9ef">print</span>(x<span style="color:#f92672">.</span>loc[:,[<span style="color:#e6db74">&#39;B&#39;</span>,<span style="color:#e6db74">&#39;D&#39;</span>]])
+
+</code></pre></div><p>레퍼런스</p>
+<p>시퀀스 자료형 : <a href="https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range">https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range</a>
+pandas indexing and selecting data : <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html">https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html</a></p>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
