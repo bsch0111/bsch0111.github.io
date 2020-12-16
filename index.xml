@@ -6,14 +6,32 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 15 Dec 2020 20:59:54 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Dec 2020 01:56:58 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>가정 설정문(Assert) </title>
+      <link>https://bsch0111.github.io/post/assert/</link>
+      <pubDate>Thu, 17 Dec 2020 01:56:58 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/assert/</guid>
+      <description>가정 설정문(assert)  assert는 뒤의 조건이 True 가 아니면 AssertError 를 발생 assert condition ‘message’로 구성 message는 AssertionError 와 같이 출력  a = 3 assert a == 3 , ‘a는 3이 아니다’ assert a == 5 , ‘a는 5가 아니다’ 2 a = 3 3 assert a == 3 , &amp;#39;a는 3이 아니다&amp;#39; ----&amp;gt; 4 assert a == 5 , &amp;#39;a는 5가 아니다&amp;#39; AssertionError: a는 5가 아니다 </description>
+    </item>
+    
+    <item>
+      <title>2020/12/16_TIL</title>
+      <link>https://bsch0111.github.io/post/2020_12_16_til/</link>
+      <pubDate>Thu, 17 Dec 2020 01:55:31 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/2020_12_16_til/</guid>
+      <description>새롭게 알게된것  리스트 컴프리헨션은 , [1)변수 2)반복문 3)조건문] 으로 구성되어있다.</description>
+    </item>
+    
     <item>
       <title>인덱싱과 슬라이스</title>
       <link>https://bsch0111.github.io/post/python_indexing/</link>
       <pubDate>Tue, 15 Dec 2020 20:59:54 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/post/python_indexing/</guid>
-      <description>인덱서와 슬라이스 슬라이스 python 에서는 연속되는 여러개의 요소를 가진 자료형을 시퀀스 자료형(Sequence Types)이라고 합니다.</description>
+      <description>인덱서와 슬라이스 슬라이스 python 에서는 연속되는 여러개의 요소를 가진 자료형을 시퀀스 자료형(Sequence Types)이라고 한다.</description>
     </item>
     
     <item>

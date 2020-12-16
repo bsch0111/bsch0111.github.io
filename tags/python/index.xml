@@ -6,7 +6,16 @@
     <description>Recent content in python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 13 Dec 2020 22:15:31 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Dec 2020 01:56:58 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>가정 설정문(Assert) </title>
+      <link>https://bsch0111.github.io/post/assert/</link>
+      <pubDate>Thu, 17 Dec 2020 01:56:58 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/assert/</guid>
+      <description>가정 설정문(assert)  assert는 뒤의 조건이 True 가 아니면 AssertError 를 발생 assert condition ‘message’로 구성 message는 AssertionError 와 같이 출력  a = 3 assert a == 3 , ‘a는 3이 아니다’ assert a == 5 , ‘a는 5가 아니다’ 2 a = 3 3 assert a == 3 , &amp;#39;a는 3이 아니다&amp;#39; ----&amp;gt; 4 assert a == 5 , &amp;#39;a는 5가 아니다&amp;#39; AssertionError: a는 5가 아니다 </description>
+    </item>
+    
     <item>
       <title>python 클래스를 정의할 때 object를 붙이는 것</title>
       <link>https://bsch0111.github.io/post/python_class_object/</link>
