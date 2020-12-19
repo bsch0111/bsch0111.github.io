@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>통계학 on </title>
+    <link>https://bsch0111.github.io/tags/%ED%86%B5%EA%B3%84%ED%95%99/</link>
+    <description>Recent content in 통계학 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 19 Dec 2020 23:13:07 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/%ED%86%B5%EA%B3%84%ED%95%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>조금더가설검정</title>
+      <link>https://bsch0111.github.io/post/%EC%A1%B0%EA%B8%88%EB%8D%94%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95/</link>
+      <pubDate>Sat, 19 Dec 2020 23:13:07 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/%EC%A1%B0%EA%B8%88%EB%8D%94%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95/</guid>
+      <description>t- test 이외에 다른 가설검정을 배워본다.
+ 독립성 : 두 그룹이 서로 독립적인 것이여야만 한다 정규성 : 가설 검정을 하려는 데이터가 정규분포와 일치하는지 등분산성 : 비교하고자하는 그룹간에 유사한 수준의 분산을 가지는지 (스케일이 비슷한지)  정규 분포가 아니고 많은 분포가 있을 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>가설검정</title>
+      <link>https://bsch0111.github.io/post/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95/</link>
+      <pubDate>Sat, 19 Dec 2020 23:12:08 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95/</guid>
+      <description>가설 검증 어떤 문제를 해결하는 방법 A가 있을 때 단순히 A로 해결한 사람들의 평균 속도, A를 사용하지 않고 문제를 해결한 사람들의 평균 속도를 비교하는 것은 기술 통계학 모집단에서 20명 정도의 표본을 대상으로 실험을 한 후 ‘모집단’이 해당 A를 적용했을때도 효과가 있는 것인가를 검증하는 것이 추리 통계학이라고 한다.</description>
+    </item>
+    
+    <item>
+      <title>CLT</title>
+      <link>https://bsch0111.github.io/post/clt/</link>
+      <pubDate>Sat, 19 Dec 2020 23:10:52 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/clt/</guid>
+      <description>CLT (중심 극한 이론)
+표준오차
+ 10000명 중에서 50명을 뽑아서 조사하는데 어떤 50명을 뽑는지에 따라서 평균값이 달라질 것이다.</description>
+    </item>
+    
+  </channel>
+</rss>

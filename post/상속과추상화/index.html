@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme=""><head>
+    <title> morgan | Blog | 상속과추상화 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="간단하게 올리는 블로그 | bsch0111@naver.com">
+    
+    <link rel="stylesheet"
+          href="https://bsch0111.github.io/css/style.min.82c3b2bf3294af8bca9cc9a9d21c772664c7bec6a0a4a84de87cf7a84f2a1033.css"
+          integrity="sha256-gsOyvzKUr4vKnMmp0hx3JmTHvsagpKhN6Hz3qE8qEDM="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://bsch0111.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bsch0111.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://bsch0111.github.io/post/%EC%83%81%EC%86%8D%EA%B3%BC%EC%B6%94%EC%83%81%ED%99%94/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://bsch0111.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="상속과추상화"/>
+<meta name="twitter:description" content="#상속
+클래스 관계에는 : 상속관계와 포함 관계가 있다. 포함관계는 멤버변수에 다른 클래스 변수를 넣어서 사용하는 것이고, 호출될때는 포함관계에 있는 함수가 제일 먼저 호출된다."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://bsch0111.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">morgan&#39;s 블로그</a></h3>
+            <div class="description">
+                <p>간단하게 올리는 블로그 | bsch0111@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/bsch0111/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bsch0111@naver.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; morgan | Blog 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/categories/"
+                        
+                   title="">Categories</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>상속과추상화</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Sat, Dec 19, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <p>#상속</p>
+<p>클래스 관계에는 : 상속관계와 <strong>포함</strong> 관계가 있다.
+포함관계는 멤버변수에 다른 클래스 변수를 넣어서 사용하는 것이고, 호출될때는 포함관계에 있는 함수가 제일 먼저 호출된다.</p>
+<pre><code># 포함코드
+
+# 클래스 선언
+class Person:
+    def __init__(self, age):
+        self.age = age
+
+    def printPerson(self):          # 포함을 사용하기 위한 Person 클래스의 다른 함수
+        print('Person_printPerson')
+
+class Student:
+    def __init__(self, age):
+        self.age = age
+        self.p = Person(self)       # Student가 Person에 포함되기 위해, Person 클래스에 대한 object 생성
+
+    def aging(self):
+        return self.age
+
+    def personComposit(self,age):
+        return age, self.p.printPerson()  # 포함개념적용된 Student 클래스의 Person object의 함수
+
+# object 생성
+s = Student(10) # 한 번 생성된 object는 파라미터가 변하지 않는 이상 출력값 또한 변하지 않는다.
+p = Person(20)
+
+# object 실행
+print(&quot;s.aging() :&quot;, s.aging())   # result : 10
+print('\n')
+
+
+print('test')
+print('print with test', &quot;s.personComposit() :&quot;, s.personComposit(40)) 
+# result 출력 순서 : Person.printPerson -&gt; print with test -&gt; s.personComposit() 
+
+
+print('\n')
+print('test2')
+print('print with test2', &quot;p.printPerson() :&quot;, p.printPerson()) 
+# result 출력 순서 : Person.printPerson -&gt; print with test2 -&gt; p.printPerson()
+
+</code></pre><p>추상화</p>
+<ul>
+<li>
+<p>아직 미구현 되었음을 알림</p>
+</li>
+<li>
+<p>에러를 발생시켜서 확인할 수도 있음</p>
+</li>
+<li>
+<p>raise NotImplementedError       # 아직 미구현했다는 에러</p>
+</li>
+<li>
+<p>abc(abstract base class) : 추상 베이스 클래스</p>
+</li>
+<li>
+<p>추상베이스 클래스 (=@ 추상 클래스)</p>
+<ul>
+<li>추상 메소드 목록만 가지는 클래스</li>
+<li>상속받은 클래스에서 구현해야할 함수 목록을 지니고 있음</li>
+<li>함수도 추상메소드로 코드는 pass만 작성해 놓는다</li>
+<li>추상 클래스의 객체는 있을 수 없다.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> abc <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StudentBase</span>(metaclass <span style="color:#f92672">=</span> ABCMeta):
+  <span style="color:#a6e22e">@abstractmethod</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">study</span>(self):
+    <span style="color:#66d9ef">pass</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span>(StudentBase):
+  <span style="color:#66d9ef">def</span> __init__(self, name):
+    self<span style="color:#f92672">.</span>_name <span style="color:#f92672">=</span> name
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">study</span>(self):
+    <span style="color:#66d9ef">print</span>(self<span style="color:#f92672">.</span>name,<span style="color:#960050;background-color:#1e0010">’은</span> <span style="color:#960050;background-color:#1e0010">공부</span> <span style="color:#960050;background-color:#1e0010">중’</span>)
+
+<span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">멤버변수는</span> <span style="color:#960050;background-color:#1e0010">어디에</span> <span style="color:#960050;background-color:#1e0010">있어도</span> <span style="color:#960050;background-color:#1e0010">되는</span> <span style="color:#960050;background-color:#1e0010">걸까?</span> __init__에서 <span style="color:#960050;background-color:#1e0010">굳이</span> <span style="color:#960050;background-color:#1e0010">초기화해주지</span> <span style="color:#960050;background-color:#1e0010">않아도</span> <span style="color:#960050;background-color:#1e0010">사용가능하다</span> 
+</code></pre></div>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/python/">python</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/python/">python</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -6,7 +6,27 @@
     <description>Recent content in python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 17 Dec 2020 01:56:58 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Dec 2020 23:15:18 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>상속과추상화</title>
+      <link>https://bsch0111.github.io/post/%EC%83%81%EC%86%8D%EA%B3%BC%EC%B6%94%EC%83%81%ED%99%94/</link>
+      <pubDate>Sat, 19 Dec 2020 23:15:18 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/%EC%83%81%EC%86%8D%EA%B3%BC%EC%B6%94%EC%83%81%ED%99%94/</guid>
+      <description>#상속
+클래스 관계에는 : 상속관계와 포함 관계가 있다. 포함관계는 멤버변수에 다른 클래스 변수를 넣어서 사용하는 것이고, 호출될때는 포함관계에 있는 함수가 제일 먼저 호출된다.</description>
+    </item>
+    
+    <item>
+      <title>==와is의차이</title>
+      <link>https://bsch0111.github.io/post/%EC%99%80is%EC%9D%98%EC%B0%A8%EC%9D%B4/</link>
+      <pubDate>Sat, 19 Dec 2020 23:14:20 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/%EC%99%80is%EC%9D%98%EC%B0%A8%EC%9D%B4/</guid>
+      <description>== : 값을 비교 is : 레퍼런스(참조) 비교
+1000 == 10 ** 3 True 1000 is 10 ** 3 False </description>
+    </item>
+    
     <item>
       <title>가정 설정문(Assert) </title>
       <link>https://bsch0111.github.io/post/assert/</link>
