@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme=""><head>
+    <title> morgan | Blog | 선형대수기초용어 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="간단하게 올리는 블로그 | bsch0111@naver.com">
+    
+    <link rel="stylesheet"
+          href="https://bsch0111.github.io/css/style.min.82c3b2bf3294af8bca9cc9a9d21c772664c7bec6a0a4a84de87cf7a84f2a1033.css"
+          integrity="sha256-gsOyvzKUr4vKnMmp0hx3JmTHvsagpKhN6Hz3qE8qEDM="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://bsch0111.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bsch0111.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://bsch0111.github.io/post/%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%EA%B8%B0%EC%B4%88%EC%9A%A9%EC%96%B4/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://bsch0111.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="선형대수기초용어"/>
+<meta name="twitter:description" content="선형대수 기초용어 분산
+ 하나의 데이터가 퍼져있는 정도 제곱이 있기 때문에 데이터의 스케일(크기)에 효과를 많이음    좋다는 것이 아님, 크기 변화에 민감할 수 있음 표준편차     분산의 스케일을 보정하기 위해 루트를 씌워서 크기변화를 줄이고자하는 방법  공분산(공통된 분산)"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://bsch0111.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">morgan&#39;s 블로그</a></h3>
+            <div class="description">
+                <p>간단하게 올리는 블로그 | bsch0111@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/bsch0111/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bsch0111@naver.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; morgan | Blog 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/categories/"
+                        
+                   title="">Categories</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>선형대수기초용어</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Mon, Dec 21, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h1 id="선형대수-기초용어">선형대수 기초용어</h1>
+<p>분산</p>
+<ul>
+<li>하나의 데이터가 퍼져있는 정도</li>
+<li>제곱이 있기 때문에 데이터의 스케일(크기)에 효과를 많이음
+<ul>
+<li>
+<ul>
+<li>좋다는 것이 아님, 크기 변화에 민감할 수 있음
+표준편차</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>분산의 스케일을 보정하기 위해 루트를 씌워서 크기변화를 줄이고자하는 방법</li>
+</ul>
+<p>공분산(공통된 분산)</p>
+<ul>
+<li>두개의 데이터가 퍼져있는 정도</li>
+<li>하나의 변수값이 왓다갓다 하는 동안 다른 변수가 어떻게 퍼지는지 알기위함</li>
+<li>공분산의 값이 둘다 하강할 때 (음의 상관관계) C(x,y) &lt; 0</li>
+<li>둘이 변화가 없을 떄  C(x,y) ~ 0</li>
+<li>둘다 상승할때 (양의 상광관계) C(x,y) &gt; 0</li>
+</ul>
+<p>-&gt; 분산이 데이터의 스케일에 영향을 받았던 것처럼 공분산도 스케일의 영향을 받음
+-&gt; 비교 대상 세트가 A(a1,a2) B(b1,b2) 가 있을때 스케일에 따라 차이가 엄청나기 때문에
+-&gt; ‘A가 B보다 높은 연관이 있다.’ 라는 결론을 낼수 없음</p>
+<p>Correlation coefficient (위의 문제를 해결하기 위한 방법) =&gt; Pearson correlation</p>
+<ul>
+<li>-1 ~ 1 까지로 정해진 범위내로 결정됨</li>
+<li>엄밀이 말해선 선형 관계가 있다 없다.</li>
+<li>numerical한 데이터에 대해서만 적용할 수 없다.</li>
+<li>categorycal한 데이터를 다루기 위해선 -&gt; spearman correlation</li>
+</ul>
+<p>직교 벡터</p>
+<ul>
+<li>임의의 벡터를 내적했을 때 0이라면 서로 수직으로 배치되어 있음</li>
+</ul>
+<p>단위 벡터</p>
+<ul>
+<li>길이가 1인 벡터 ||V||</li>
+<li>해당 차원의 단위 벡터 1,0으로 이루어진 벡터</li>
+<li>모든 벡터는 단위 벡터의 선형 조합으로 가능합니다.</li>
+</ul>
+<p>Span</p>
+<ul>
+<li>주어진 두개 이상의 벡터로 만들 수 있는 모든 공간</li>
+<li>선형 관계의 벡터 : 두 벡터가 같은 공간에 있는 경우 해당 선 이외에 다른 벡터를 표현할 수 없음</li>
+</ul>
+<p>선형관계가 없는 벡터</p>
+<ul>
+<li>반대로 같은 선상에 있지 않은 벡터들은 선형적으로 독립되어 있다고 표현하며, 주어진 공간의 모든 벡터를 조합을 통해 만들어 낼 수 있습니다.</li>
+</ul>
+<p>basis</p>
+<ul>
+<li>span의 반대되는 개념</li>
+<li>주어진 공간을 만들어낼 수 있는 벡터들의 모음</li>
+</ul>
+<p>Rank</p>
+<ul>
+<li>주어진 매트릭스의 열 혹은 행으로 만들 수 있는 차원</li>
+<li>이론상으로는 주어진 벡터의 개수만큼의 차원을 만들어야하지만 선형관계에 있는 경우 그것보다 적게 나타난다</li>
+</ul>
+<p>Gaussian Elimination</p>
+<ul>
+<li>주어진 벡터가 선형관계를 가지고 있는지 확인하는 과정</li>
+<li>데이터 쪽의 의미로 생각해보면 더 좋을 듯함</li>
+</ul>
+<ul>
+<li>데이터 사이언스에서 가우시안 엘리메이션을 통해 데이터의 인사이트를 얻을 수 있음</li>
+</ul>
+<p>Linear Projections</p>
+<ul>
+<li>데이터 사이언스에서 왜 Linear Projection을 왜 배우나요</li>
+<li>Loss : Information of Y feature</li>
+<li>궁극적으로는 300개의 feature 중 의미가 작은 feature를 제거하면서 원래 data의 insight를 제공할 수 있다면 좋은 방향이 되지 않을까</li>
+</ul>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/%ED%86%B5%EA%B3%84%ED%95%99/">통계학</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/%ED%86%B5%EA%B3%84%ED%95%99/">통계학</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

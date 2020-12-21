@@ -6,7 +6,34 @@
     <description>Recent content in python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 19 Dec 2020 23:15:18 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2020 22:20:13 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Private형에접근</title>
+      <link>https://bsch0111.github.io/post/private%ED%98%95%EC%97%90%EC%A0%91%EA%B7%BC/</link>
+      <pubDate>Mon, 21 Dec 2020 22:20:13 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/private%ED%98%95%EC%97%90%EC%A0%91%EA%B7%BC/</guid>
+      <description>private 형에 접근 : __로 선언되어있는 private 형 같은 경우 외부 import 되어있으면 접근할 수 없다.</description>
+    </item>
+    
+    <item>
+      <title>Protected Getter, Setter 사용</title>
+      <link>https://bsch0111.github.io/post/protected_getter/</link>
+      <pubDate>Mon, 21 Dec 2020 22:19:19 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/protected_getter/</guid>
+      <description>Protected Getter, Setter 사용 class Car: def __init__(self, car_name, car_color ): self.</description>
+    </item>
+    
+    <item>
+      <title>Duck_typer과 매직 메소드와 private형 변수 접근</title>
+      <link>https://bsch0111.github.io/post/duck_type_magicmethod/</link>
+      <pubDate>Mon, 21 Dec 2020 22:18:09 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/duck_type_magicmethod/</guid>
+      <description>클래스 생성시 필요한 부분 Duck Typing  객체의 상속을 이용하지 않고, 해당 기능을 하는 method가 있는지만을 파악하는것 만약 어떤 새가 오리처럼 걷고, 헤엄치고, 꽥꽥거리는 소리를 낸다면 나는 그 새를 오리라고 부를 것이다.</description>
+    </item>
+    
     <item>
       <title>상속과추상화</title>
       <link>https://bsch0111.github.io/post/%EC%83%81%EC%86%8D%EA%B3%BC%EC%B6%94%EC%83%81%ED%99%94/</link>
