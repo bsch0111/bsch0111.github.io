@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github_API on </title>
+    <link>https://bsch0111.github.io/tags/github_api/</link>
+    <description>Recent content in github_API on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 03 Jan 2021 23:39:36 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/github_api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>google Sheet에 Github Repo 정보 가져오기</title>
+      <link>https://bsch0111.github.io/post/googlesheet_github01/</link>
+      <pubDate>Sun, 03 Jan 2021 23:39:36 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/googlesheet_github01/</guid>
+      <description>google Sheet에 Github Repo 정보 가져오기  Import GitHub Data to Google Sheets 의 글을 따라 시도해보았습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
