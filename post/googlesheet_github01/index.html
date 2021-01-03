@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme=""><head>
-    <title> morgan | Blog | 어려운통계 </title>
+    <title> morgan | Blog | Googlesheet_github01 </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://bsch0111.github.io/post/%EC%96%B4%EB%A0%A4%EC%9A%B4%ED%86%B5%EA%B3%84/">
+    <link rel="canonical" href="https://bsch0111.github.io/post/googlesheet_github01/">
 
     
     
@@ -32,9 +32,8 @@
             integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
             crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="어려운통계"/>
-<meta name="twitter:description" content="통계학이 어려웠던점
-   강의를 여러개 보면서 용어가 서로 혼동 되었다."/>
+<meta name="twitter:title" content="Googlesheet_github01"/>
+<meta name="twitter:description" content="google Sheet에 Github Repo 정보 가져오기  Import GitHub Data to Google Sheets 의 글을 따라 시도해보았습니다."/>
 
 </head>
 <body><div class="sidebar animated fadeInDown">
@@ -121,53 +120,101 @@
         <div class="post-content">
 
             <div class="post-title">
-                <h3>어려운통계</h3>
+                <h3>Googlesheet_github01</h3>
                 
                     <div class="info">
                         <em class="fas fa-calendar-day"></em>
-                        <span class="date">Sat, Dec 19, 2020</span>
+                        <span class="date">Sun, Jan 3, 2021</span>
                         <em class="fas fa-stopwatch"></em>
                         <span class="reading-time"></span>
                     </div>
                 
             </div>
 
-            <p>통계학이 어려웠던점</p>
+            <h1 id="google-sheet에-github-repo-정보-가져오기">google Sheet에 Github Repo 정보 가져오기</h1>
+<ul>
+<li><a href="https://mixedanalytics.com/knowledge-base/access-github-data-in-google-sheets/">Import GitHub Data to Google Sheets</a> 의 글을 따라 시도해보았습니다.</li>
+</ul>
+<h2 id="import-github-data-to-google-sheetshttpsmixedanalyticscomknowledge-baseaccess-github-data-in-google-sheets-따라하기"><a href="https://mixedanalytics.com/knowledge-base/access-github-data-in-google-sheets/">Import GitHub Data to Google Sheets</a> 따라하기</h2>
 <ul>
 <li>
-<ol>
-<li>강의를 여러개 보면서 용어가 서로 혼동 되었다. (채택, accept, 기각, reject)</li>
-</ol>
+<p>예제는 <a href="https://github.com/octocat/Hello-World/">https://github.com/octocat/Hello-World/</a> 의 데이터를 사용</p>
 </li>
 <li>
-<ol start="2">
-<li>‘이해를 하였다.’을 귀무가설로 하고 p-value 0.01 미만 ‘이해를 하지 않았다’라는 대립가설을 채택하였다. + 신뢰도 +</li>
-</ol>
-</li>
-<li>
-<ol start="3">
-<li>배운거 이상의 질문을 하시는 분들 때문에 조금 더 헷갈린 부분이 있다. ( 이 지점까지만 이해하면 괜찮은데 -&gt; Z-score, T-score .. 조금 더 얻고 싶어함에 헷갈리는 부분이 있다 ).</li>
-</ol>
+<p>업무에서 사용하는 레포지토리와 다른 점</p>
 <ul>
-<li>질문의 단계가 현재보다 더 위인지, 아래인지 알려주시는 것도 좋을거 같습니다</li>
-<li>질문 1.  강의하면서 놓치게 된 내용</li>
-<li>질문 2. 강의진행하면 알게될 내용인데 미리 알게 되어 혼란을 주는 내용</li>
+<li>업무에서 활용하는 레포지토리는 Private로 되어 있음</li>
+<li>Priavte 는 권한작업을 해줘야 할 것임</li>
 </ul>
 </li>
 <li>
-<ol start="4">
-<li>통계학에서 관습적으로 말하는 것들이 더 있는지 궁금했다 p-value가 0.01 , 표본의 개수가 30개 정도부터는 정규분포를 따른다&hellip;  ( 이걸 알아야 해석을 더 잘 할수 있을거같은 생각이 들었다 ) 관습적으로 사용하는것을 어떻게 알 수 있는지</li>
-</ol>
+<p>세 가지 정보를 수집해보겠음</p>
+<ul>
+<li>Repository Pull Request</li>
+<li>Commit Messages in Pull Request</li>
+<li>Raw Data related with Commit</li>
+</ul>
 </li>
 </ul>
+<h3 id="step-1-빈-구글-시트-생성">Step 1) 빈 구글 시트 생성</h3>
+<p><img src="https://i.imgur.com/0Wo9m7M.png" alt="image-20210103192901803"></p>
+<h3 id="step-2-google-sheet-add-ons을-이용해서-api-connector-설치">Step 2) Google Sheet Add-ons을 이용해서 API Connector 설치</h3>
+<ul>
+<li>Add-ons &ndash;&gt; Get Add-ons &ndash;&gt; API Connector install</li>
+</ul>
+<p><img src="https://i.imgur.com/RNYKaRr.png" alt="img"></p>
+<p><img src="https://i.imgur.com/erqqdLD.png" alt="img"></p>
+<h3 id="step-3-api-connector-에서-github-api-사용할-수-있도록-연결">Step 3) API Connector 에서 GITHUB API 사용할 수 있도록 연결</h3>
+<ul>
+<li>Add-ons -&gt; API Connector -&gt; Manage Connections -&gt; Github Connect</li>
+</ul>
+<p><img src="https://i.imgur.com/W34pttr.png" alt="img"></p>
+<p><img src="https://i.imgur.com/ImQ0PAx.png" alt="img"></p>
+<p><img src="https://i.imgur.com/K4tmKSn.png" alt="img"></p>
+<p><img src="https://i.imgur.com/2GML3xh.png" alt="img"></p>
+<h3 id="step-4-request-api-생성">Step 4) REQUEST API 생성</h3>
+<ul>
+<li>pull requests list</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">https://api.github.com/repos/octocat/hello-world/pulls
+</code></pre></div><ul>
+<li>특정 pull requests</li>
+</ul>
+<pre><code>https://api.github.com/repos/octocat/hello-world/pulls/796
+</code></pre><ul>
+<li>특정 pull requests 안에 있는 commit list</li>
+</ul>
+<pre><code>https://api.github.com/repos/octocat/hello-world/pulls/796/commits
+</code></pre><h3 id="step-5-github-data를-sheet로-가져오기">Step 5) Github Data를 Sheet로 가져오기</h3>
+<ul>
+<li>
+<p>Add-ons &ndash;&gt; API Connector &ndash;&gt; Open</p>
+</li>
+<li>
+<p>Create 탭으로 가서 작성할 API에 대한 자료 입력</p>
+<ul>
+<li>method : GET</li>
+<li>API URL path : <a href="https://api.github.com/repos/octocat/hello-world/pulls">https://api.github.com/repos/octocat/hello-world/pulls</a></li>
+<li>Authentication : GITHUB</li>
+<li>Destination sheet : 우선 Set Current로 지정</li>
+<li>REQUEST NAME 지정 : Example_REQUEST</li>
+<li>RUN 혹은 SAVE 지정</li>
+</ul>
+</li>
+<li>
+<p>총 30개의 REQUEST 에 대한 데이터를 저장함</p>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/sbTbgMd.png" alt="img"></p>
+<p><img src="https://i.imgur.com/9dLqi6d.png" alt="img"></p>
+<h3 id="step-6-run-">Step 6) Run !</h3>
+<p><img src="https://i.imgur.com/YeasdAd.png" alt="img"></p>
 
         </div>
         <div class="post-footer">
             <div class="info">
-                <span class="separator"><a class="category" href="/categories/%ED%86%B5%EA%B3%84%ED%95%99/">통계학</a></span>
-
-                <span class="separator"><a class="tag" href="/tags/%ED%86%B5%EA%B3%84%ED%95%99/">통계학</a></span>
-
+                
+                
             </div>
         </div>
 

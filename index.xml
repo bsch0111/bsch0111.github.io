@@ -6,7 +6,16 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 21 Dec 2020 22:22:40 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jan 2021 23:39:36 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Googlesheet_github01</title>
+      <link>https://bsch0111.github.io/post/googlesheet_github01/</link>
+      <pubDate>Sun, 03 Jan 2021 23:39:36 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/googlesheet_github01/</guid>
+      <description>google Sheet에 Github Repo 정보 가져오기  Import GitHub Data to Google Sheets 의 글을 따라 시도해보았습니다.</description>
+    </item>
+    
     <item>
       <title>선형대수기초용어</title>
       <link>https://bsch0111.github.io/post/%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%EA%B8%B0%EC%B4%88%EC%9A%A9%EC%96%B4/</link>
@@ -120,7 +129,8 @@
       <pubDate>Sat, 19 Dec 2020 23:09:37 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/post/%EC%96%B4%EB%A0%A4%EC%9A%B4%ED%86%B5%EA%B3%84/</guid>
-      <description></description>
+      <description>통계학이 어려웠던점
+   강의를 여러개 보면서 용어가 서로 혼동 되었다.</description>
     </item>
     
     <item>
