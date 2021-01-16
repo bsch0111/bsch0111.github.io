@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>top on </title>
+    <link>https://bsch0111.github.io/tags/top/</link>
+    <description>Recent content in top on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 16 Jan 2021 18:06:07 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TOP명령어에대해서알아보기1</title>
+      <link>https://bsch0111.github.io/post/top%EB%AA%85%EB%A0%B9%EC%96%B4%EC%97%90%EB%8C%80%ED%95%B4%EC%84%9C%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B01/</link>
+      <pubDate>Sat, 16 Jan 2021 18:06:07 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/top%EB%AA%85%EB%A0%B9%EC%96%B4%EC%97%90%EB%8C%80%ED%95%B4%EC%84%9C%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B01/</guid>
+      <description>TOP  시스템의 상태를 전반적으로 확인하기 위해 mac, linux의 기본 프로그램으로 설치되어 있음 옵션 없이 실행하면 interval 간격을 3초로 화면을 갱신하며 보여줌  단축키  소문자 o 를 입력하면 어떤 순으로 출력할지를 정한다.</description>
+    </item>
+    
+  </channel>
+</rss>

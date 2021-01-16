@@ -6,7 +6,16 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 03 Jan 2021 23:39:36 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jan 2021 18:06:07 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>https://bsch0111.github.io/categories/linux/</link>
+      <pubDate>Sat, 16 Jan 2021 18:06:07 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>github_API</title>
       <link>https://bsch0111.github.io/categories/github_api/</link>
