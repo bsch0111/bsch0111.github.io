@@ -6,13 +6,22 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 16 Jan 2021 18:06:07 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jan 2021 23:00:31 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>top</title>
-      <link>https://bsch0111.github.io/tags/top/</link>
+      <title>conda</title>
+      <link>https://bsch0111.github.io/tags/conda/</link>
+      <pubDate>Sat, 16 Jan 2021 23:00:31 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/tags/conda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>top,linux</title>
+      <link>https://bsch0111.github.io/tags/toplinux/</link>
       <pubDate>Sat, 16 Jan 2021 18:06:07 +0900</pubDate>
       
-      <guid>https://bsch0111.github.io/tags/top/</guid>
+      <guid>https://bsch0111.github.io/tags/toplinux/</guid>
       <description></description>
     </item>
     
