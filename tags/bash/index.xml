@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on </title>
+    <link>https://bsch0111.github.io/tags/bash/</link>
+    <description>Recent content in bash on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 24 Jan 2021 03:04:25 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ls_숫자_순으로_정렬</title>
+      <link>https://bsch0111.github.io/post/ls_%EC%88%AB%EC%9E%90_%EC%88%9C%EC%9C%BC%EB%A1%9C_%EC%A0%95%EB%A0%AC/</link>
+      <pubDate>Sun, 24 Jan 2021 03:04:25 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/ls_%EC%88%AB%EC%9E%90_%EC%88%9C%EC%9C%BC%EB%A1%9C_%EC%A0%95%EB%A0%AC/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
