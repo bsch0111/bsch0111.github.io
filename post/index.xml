@@ -13,7 +13,7 @@
       <pubDate>Sun, 24 Jan 2021 03:04:25 +0900</pubDate>
       
       <guid>https://bsch0111.github.io/post/ls_%EC%88%AB%EC%9E%90_%EC%88%9C%EC%9C%BC%EB%A1%9C_%EC%A0%95%EB%A0%AC/</guid>
-      <description></description>
+      <description>ls 입력 시 숫자 순으로 정렬  ls | sort -n : sort 명령어를 이용해서 숫자 순으로 정렬  sort 옵션  -r : 내림차순으로 정렬 -k{n} : n번째 문자 순으로 정렬  </description>
     </item>
     
     <item>
