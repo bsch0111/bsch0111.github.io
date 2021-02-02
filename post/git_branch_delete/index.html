@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme=""><head>
-    <title> morgan | Blog | git </title>
+    <title> morgan | Blog | Git_branch_delete </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -21,10 +21,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://bsch0111.github.io/tags/git/">
+    <link rel="canonical" href="https://bsch0111.github.io/post/git_branch_delete/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="https://bsch0111.github.io/tags/git/index.xml" title="" />
     
     
     
@@ -33,8 +32,9 @@
             integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
             crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="git"/>
-<meta name="twitter:description" content="간단하게 올리는 블로그 | bsch0111@naver.com"/>
+<meta name="twitter:title" content="Git_branch_delete"/>
+<meta name="twitter:description" content="참고 : https://thdev.tech/git/2016/12/19/Git-Branch-Name-Change/
+ git branch -m의 명령어 뒤에 변경전_branch_name과 새로운_branch_name 을 작성"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown">
@@ -117,33 +117,68 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive animated fadeInDown">
-        <ul class="list-with-title">
-            
-                <div class="listing-title">2021</div>
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Git_branch_delete</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/post/git_branch_delete/" title="Git_branch_delete">Git_branch_delete</a>
-                                <div class="post-time"><span class="date">Feb 3</span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Wed, Feb 3, 2021</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
                 
-            
-                <div class="listing-title">2020</div>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://bsch0111.github.io/post/problem-when-repository-has-submodule/" title="Clone 할 레포지토리가 submodule을 포함하고 있을 떄">Clone 할 레포지토리가 submodule을 포함하고 있을 떄</a>
-                                <div class="post-time"><span class="date">Dec 4</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+
+            <blockquote>
+<p>참고 : <a href="https://thdev.tech/git/2016/12/19/Git-Branch-Name-Change/">https://thdev.tech/git/2016/12/19/Git-Branch-Name-Change/</a></p>
+</blockquote>
+<p>git branch -m의 명령어 뒤에 변경전_branch_name과 새로운_branch_name 을 작성</p>
+<pre><code>git branch -m python_v 
+</code></pre><p>기존 브런치 삭제</p>
+<pre><code>git push origin :python_v
+</code></pre><p>새 브런치 push</p>
+<pre><code>git push --set-upstream origin DSFT01 
+</code></pre>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/git/">git</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/git/">git</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
     </div>
+
 
         </div>
     </div>

@@ -6,7 +6,17 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 31 Jan 2021 03:48:18 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Feb 2021 01:29:50 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git_branch_delete</title>
+      <link>https://bsch0111.github.io/post/git_branch_delete/</link>
+      <pubDate>Wed, 03 Feb 2021 01:29:50 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/git_branch_delete/</guid>
+      <description>참고 : https://thdev.tech/git/2016/12/19/Git-Branch-Name-Change/
+ git branch -m의 명령어 뒤에 변경전_branch_name과 새로운_branch_name 을 작성</description>
+    </item>
+    
     <item>
       <title>Requirements.txt 생성하는 방법</title>
       <link>https://bsch0111.github.io/post/requirements.txt_%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%EB%B0%A9%EB%B2%95/</link>

@@ -6,7 +6,17 @@
     <description>Recent content in git on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 04 Dec 2020 23:55:06 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Feb 2021 01:29:50 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git_branch_delete</title>
+      <link>https://bsch0111.github.io/post/git_branch_delete/</link>
+      <pubDate>Wed, 03 Feb 2021 01:29:50 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/git_branch_delete/</guid>
+      <description>참고 : https://thdev.tech/git/2016/12/19/Git-Branch-Name-Change/
+ git branch -m의 명령어 뒤에 변경전_branch_name과 새로운_branch_name 을 작성</description>
+    </item>
+    
     <item>
       <title>Clone 할 레포지토리가 submodule을 포함하고 있을 떄</title>
       <link>https://bsch0111.github.io/post/problem-when-repository-has-submodule/</link>
