@@ -6,7 +6,17 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 03 Feb 2021 01:29:50 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 19:57:52 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example</title>
+      <link>https://bsch0111.github.io/post/example/</link>
+      <pubDate>Tue, 09 Feb 2021 19:57:52 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/example/</guid>
+      <description>AIB 팀 블로깅 홍보 글 인터뷰 목표
+ AIB 팀에 대한 전반적인 개요에 대해 소개 앞으로 AIB팀이 할수 있을 일에 대한 소개  대상 독자</description>
+    </item>
+    
     <item>
       <title>Git_branch_delete</title>
       <link>https://bsch0111.github.io/post/git_branch_delete/</link>
