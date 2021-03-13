@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme=""><head>
+    <title> morgan | Blog | Orm에_대해서 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="간단하게 올리는 블로그 | bsch0111@naver.com">
+    
+    <link rel="stylesheet"
+          href="https://bsch0111.github.io/css/style.min.82c3b2bf3294af8bca9cc9a9d21c772664c7bec6a0a4a84de87cf7a84f2a1033.css"
+          integrity="sha256-gsOyvzKUr4vKnMmp0hx3JmTHvsagpKhN6Hz3qE8qEDM="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://bsch0111.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bsch0111.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://bsch0111.github.io/post/orm%EC%97%90_%EB%8C%80%ED%95%B4%EC%84%9C/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://bsch0111.github.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Orm에_대해서"/>
+<meta name="twitter:description" content="ORM (Object_Relational Mapper) 장점
+ 현재 사용하고 있는 언어만 사용해도 됨 데이터베이스 시스템으로부터 분리가 됨 직접 작성하는 SQL 쿼리문이 없고 더 높은 성능의 SQL 쿼리문을 작성할 수 있습니다."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://bsch0111.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">morgan&#39;s 블로그</a></h3>
+            <div class="description">
+                <p>간단하게 올리는 블로그 | bsch0111@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/bsch0111/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bsch0111@naver.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; morgan | Blog 2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/categories/"
+                        
+                   title="">Categories</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Orm에_대해서</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Sat, Mar 13, 2021</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h3 id="orm-object_relational-mapper">ORM (Object_Relational Mapper)</h3>
+<p><strong>장점</strong></p>
+<ul>
+<li>현재 사용하고 있는 언어만 사용해도 됨</li>
+<li>데이터베이스 시스템으로부터 분리가 됨</li>
+<li>직접 작성하는 SQL 쿼리문이 없고 더 높은 성능의 SQL 쿼리문을 작성할 수 있습니다.</li>
+</ul>
+<p><strong>단점</strong></p>
+<ul>
+<li>데이터베이스와 바로 연결하는 것보다 초기설정이 더 많아지거나 복잡해질 수 있습니다.</li>
+<li>내부 작동에 대한 충분한 이해가 없는 경우 해결이 힘들 수 있습니다.</li>
+<li>데이터베이스에 직접 쿼리문을 보내는 것이 아니기 떄문에 성능 저하가 발생합니다.</li>
+</ul>
+<h2 id="sqlalchemy-orm-의-기능을-제공하는-python-라이브러리">SQLAlchemy (ORM 의 기능을 제공하는 Python 라이브러리)</h2>
+<h3 id="core">Core</h3>
+<ul>
+<li>데이터베이스와 상호작용</li>
+</ul>
+<h3 id="엔진">엔진</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> sqlalchemy <span style="color:#f92672">import</span> create_engine
+
+engine <span style="color:#f92672">=</span> create_engine(<span style="color:#e6db74">&#34;데이터베이스 주소&#34;</span>)
+
+<span style="color:#75715e">#engine = create_engine(&#34;sqlite:///:memory:&#34;)</span>
+
+<span style="color:#75715e"># 주위</span>
+<span style="color:#75715e"># - :// 다음에 / 가 하나가 오면 현재 디렉토리부터 상대적인 경로, // 처럼 두개가 있다면 절대적인 경로</span>
+<span style="color:#75715e"># - :memory: -&gt; 메모리에서 임시적인 데이터베이스를 사용한다는 뜻</span>
+
+</code></pre></div><h3 id="매핑mappaing">매핑(Mappaing)</h3>
+<ul>
+<li>데이터베이스의 구조와 코드상의 구조를 연결하는 것</li>
+<li>특정 테이블이 데이터베이스 상에 존재한다면 코드 상에서도 해당 테이블과 연결될 수 있도록 테이블을 구현하는 것</li>
+</ul>
+<p><code>declarative_base()</code></p>
+<ul>
+<li><code>base class</code> 를 리턴</li>
+<li><code>base class</code> 를 상속받은 클래스는 자동으로 ORM이랑 연결지어서 사용됨</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">user</span> (
+    id INTEGER <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>,
+    name STRING,
+    age INTEGER
+)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">from</span> sqlalchemy.orm <span style="color:#f92672">import</span> declarative_base
+
+base <span style="color:#f92672">=</span> declarative_base()
+
+<span style="color:#f92672">from</span> sqlalchemy <span style="color:#f92672">import</span> Column, Integer, String
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span>(base):
+    __tablename__ <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;user&#39;</span>
+
+    id <span style="color:#f92672">=</span> Column(String, primary_key<span style="color:#f92672">=</span>True)
+    name <span style="color:#f92672">=</span> Column(String)
+    age <span style="color:#f92672">=</span> Column(Integer)
+
+    <span style="color:#75715e"># id = Column(name = &#39;id&#39;, Integer, primary_key=True)</span>
+    <span style="color:#75715e"># name = Column(name = &#39;name&#39;, String)</span>
+    <span style="color:#75715e"># age = Column(name = &#39;age&#39;, Integer)</span>
+
+
+    <span style="color:#66d9ef">def</span> __repr__(self):
+        <span style="color:#66d9ef">return</span> f<span style="color:#e6db74">&#34;USER id : {self.id}, name : {self.name}, age : {self.age}&#34;</span>
+</code></pre></div><ul>
+<li>클래스의 이름을 소문자로 변경한 테이블과 매핑</li>
+<li><code>__tablename__</code>을 사용해도 좋지만, 클래스 이름으로 매핑시키는게 더 좋아보임</li>
+</ul>
+<h3 id="매핑한-내용을-데이터베이스와-연결--스키마-생성-">매핑한 내용을 데이터베이스와 연결 ( 스키마 생성 )</h3>
+<p><code> base.metadata.create_all(engine)</code></p>
+<h2 id="세션-session">세션 (Session)</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> sqlalchemy.orm <span style="color:#f92672">import</span> sessionmaker
+Session <span style="color:#f92672">=</span> sessionmaker(bind<span style="color:#f92672">=</span>engine)
+
+<span style="color:#75715e"># 후에 연결도 가능</span>
+<span style="color:#75715e"># Session = sessionmaker()</span>
+<span style="color:#75715e"># Session.configure(bind=engine)</span>
+</code></pre></div><ul>
+<li>이후 세션을 통한 작업</li>
+</ul>
+<h3 id="create--데이터-추가">Create : 데이터 추가</h3>
+<pre><code>ed_user = User(id='ed', name='Ed Jones', age=19)
+Session.add(ed_user)
+
+&lt;!-- Session.add_all([
+    User(id='ed', name='Ed Jones', age=19),
+    User(id='wd', name='Wendy', age=19),
+    User(id='fd', name='Fred', age=19),
+]) --&gt;
+</code></pre><h3 id="조회">조회</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> our_user <span style="color:#f92672">=</span> session<span style="color:#f92672">.</span>query(User)<span style="color:#f92672">.</span>filter_by(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ed&#39;</span>)<span style="color:#f92672">.</span>first()
+
+<span style="color:#75715e">#  &gt;&gt; ed_user == our_user (값 비교)</span>
+<span style="color:#75715e">#  &gt;&gt; TRUE</span>
+<span style="color:#75715e">#  &gt;&gt; ed_user is our_user (주소 비교)</span>
+<span style="color:#75715e">#  &gt;&gt; TRUE</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> instance <span style="color:#f92672">in</span> session<span style="color:#f92672">.</span>query(User)<span style="color:#f92672">.</span>order_by(User<span style="color:#f92672">.</span>id):
+    <span style="color:#66d9ef">print</span>(instance<span style="color:#f92672">.</span>name, instance<span style="color:#f92672">.</span>fullname)
+
+<span style="color:#66d9ef">for</span> id, name <span style="color:#f92672">in</span> session<span style="color:#f92672">.</span>query(User<span style="color:#f92672">.</span>id, User<span style="color:#f92672">.</span>name):
+    <span style="color:#66d9ef">print</span>(id, name)
+
+<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> session<span style="color:#f92672">.</span>query(User, User<span style="color:#f92672">.</span>Uname)<span style="color:#f92672">.</span>all():
+    <span style="color:#66d9ef">print</span>(row<span style="color:#f92672">.</span>User, row<span style="color:#f92672">.</span>name)
+
+<span style="color:#75715e">#LIMIT</span>
+<span style="color:#66d9ef">for</span> u <span style="color:#f92672">in</span> session<span style="color:#f92672">.</span>query(User)<span style="color:#f92672">.</span>order_by(User<span style="color:#f92672">.</span>id)[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">2</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]:
+    <span style="color:#66d9ef">print</span>(u)
+
+<span style="color:#75715e"># Filter</span>
+<span style="color:#66d9ef">for</span> name <span style="color:#f92672">in</span> session<span style="color:#f92672">.</span>query(User<span style="color:#f92672">.</span>name)<span style="color:#f92672">.</span>filter_by(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Ed Jones&#39;</span>):
+    <span style="color:#66d9ef">print</span>(id)
+<span style="color:#75715e"># Filter : SQL 보다 유연하게 사용가능 ( Python 연산자 모두 가능)</span>
+<span style="color:#66d9ef">for</span> name <span style="color:#f92672">in</span> session<span style="color:#f92672">.</span>query(user<span style="color:#f92672">.</span>name)<span style="color:#f92672">.</span>filter_by(User<span style="color:#f92672">.</span>name<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;Ed Jones&#39;</span>)
+
+<span style="color:#66d9ef">for</span> user <span style="color:#f92672">in</span> session<span style="color:#f92672">.</span>query(User)<span style="color:#f92672">.</span>filter(User<span style="color:#f92672">.</span>id<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;ed&#39;</span>)\
+<span style="color:#f92672">.</span>filter(User<span style="color:#f92672">.</span>name<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;Ed Jones&#39;</span>)
+
+<span style="color:#66d9ef">for</span> user <span style="color:#f92672">in</span> session<span style="color:#f92672">.</span>query(User)<span style="color:#f92672">.</span>filter(User<span style="color:#f92672">.</span>name<span style="color:#f92672">.</span>like(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%e</span><span style="color:#e6db74">d%&#39;</span>))
+</code></pre></div><h3 id="세션을-데이터베이스에-적용하고-싶을때">세션을 데이터베이스에 적용하고 싶을때</h3>
+<p><code>Session.commit()</code></p>
+<pre><code>
+</code></pre>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/python/">python</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/orm/">ORM</a><a class="tag" href="/tags/python/">python</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
