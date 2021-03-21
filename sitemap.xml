@@ -1,499 +1,301 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://bsch0111.github.io/</loc>
     <lastmod>2021-03-13T22:41:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/</loc>
     <lastmod>2021-03-13T22:41:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/orm/</loc>
     <lastmod>2021-03-13T22:41:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/orm%EC%97%90_%EB%8C%80%ED%95%B4%EC%84%9C/</loc>
     <lastmod>2021-03-13T22:41:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/</loc>
     <lastmod>2021-03-13T22:41:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/python/</loc>
     <lastmod>2021-03-13T22:41:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/python/</loc>
     <lastmod>2021-03-13T22:41:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/</loc>
     <lastmod>2021-03-13T22:41:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/update%EC%9A%A9/</loc>
     <lastmod>2021-03-13T22:17:44+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/%EA%B3%A0%EC%95%84%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A1%9C%EB%8D%AE%EC%96%B4%EC%93%B0%EA%B8%B0/</loc>
     <lastmod>2021-03-09T19:40:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/mac_app/</loc>
     <lastmod>2021-03-07T02:14:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/git/</loc>
     <lastmod>2021-02-03T01:29:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/git/</loc>
     <lastmod>2021-02-03T01:29:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/git_branch_delete/</loc>
     <lastmod>2021-02-03T01:29:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/requirements.txt_%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%EB%B0%A9%EB%B2%95/</loc>
     <lastmod>2021-01-31T03:48:18+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/bash/</loc>
     <lastmod>2021-01-24T03:04:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/bash/</loc>
     <lastmod>2021-01-24T03:04:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/linux/</loc>
     <lastmod>2021-01-24T03:04:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/ls_%EC%88%AB%EC%9E%90_%EC%88%9C%EC%9C%BC%EB%A1%9C_%EC%A0%95%EB%A0%AC/</loc>
     <lastmod>2021-01-24T03:04:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/conda/</loc>
     <lastmod>2021-01-16T23:00:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/conda/</loc>
     <lastmod>2021-01-16T23:00:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/conda_install_%EC%97%90_%EB%B2%84%EC%A0%84_%EB%AA%85%EC%8B%9C/</loc>
     <lastmod>2021-01-16T23:00:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/linux/</loc>
     <lastmod>2021-01-16T18:06:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/toplinux/</loc>
     <lastmod>2021-01-16T18:06:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/top%EB%AA%85%EB%A0%B9%EC%96%B4%EC%97%90%EB%8C%80%ED%95%B4%EC%84%9C%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B01/</loc>
     <lastmod>2021-01-16T18:06:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/github_api/</loc>
     <lastmod>2021-01-03T23:39:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/github_api/</loc>
     <lastmod>2021-01-03T23:39:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/googlesheet_github01/</loc>
     <lastmod>2021-01-03T23:39:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/google_sheet/</loc>
     <lastmod>2021-01-03T23:39:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%EA%B8%B0%EC%B4%88%EC%9A%A9%EC%96%B4/</loc>
     <lastmod>2020-12-21T22:22:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/%ED%86%B5%EA%B3%84%ED%95%99/</loc>
     <lastmod>2020-12-21T22:22:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/%ED%86%B5%EA%B3%84%ED%95%99/</loc>
     <lastmod>2020-12-21T22:22:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%EC%A0%91%EA%B7%BC/</loc>
     <lastmod>2020-12-21T22:21:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/til/</loc>
     <lastmod>2020-12-21T22:21:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/til/</loc>
     <lastmod>2020-12-21T22:21:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/private%ED%98%95%EC%97%90%EC%A0%91%EA%B7%BC/</loc>
     <lastmod>2020-12-21T22:20:13+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/protected_getter/</loc>
     <lastmod>2020-12-21T22:19:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/duck_type_magicmethod/</loc>
     <lastmod>2020-12-21T22:18:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/confidnece_interval/</loc>
     <lastmod>2020-12-21T22:16:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/%EC%83%81%EC%86%8D%EA%B3%BC%EC%B6%94%EC%83%81%ED%99%94/</loc>
     <lastmod>2020-12-19T23:15:18+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/%EC%99%80is%EC%9D%98%EC%B0%A8%EC%9D%B4/</loc>
     <lastmod>2020-12-19T23:14:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/%EC%A1%B0%EA%B8%88%EB%8D%94%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95/</loc>
     <lastmod>2020-12-19T23:13:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95/</loc>
     <lastmod>2020-12-19T23:12:08+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/clt/</loc>
     <lastmod>2020-12-19T23:10:52+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/%EC%96%B4%EB%A0%A4%EC%9A%B4%ED%86%B5%EA%B3%84/</loc>
     <lastmod>2020-12-19T23:09:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/assert/</loc>
     <lastmod>2020-12-17T01:56:58+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/2020_12_16_til/</loc>
     <lastmod>2020-12-17T01:55:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_indexing/</loc>
     <lastmod>2020-12-15T20:59:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_class_object/</loc>
     <lastmod>2020-12-13T22:15:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/missing-data/</loc>
     <lastmod>2020-12-12T00:35:18+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/pandas/</loc>
     <lastmod>2020-12-12T00:35:18+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/pandas/</loc>
     <lastmod>2020-12-12T00:35:18+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_null/</loc>
     <lastmod>2020-12-12T00:35:18+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/sometings_that_i_want/</loc>
     <lastmod>2020-12-11T00:30:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/%EC%9E%A1%EB%8B%B4/</loc>
     <lastmod>2020-12-11T00:30:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/%EC%9E%A1%EB%8B%B4/</loc>
     <lastmod>2020-12-11T00:30:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/methods/</loc>
     <lastmod>2020-12-08T02:17:16+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_methods/</loc>
     <lastmod>2020-12-08T02:17:16+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/class-variable/</loc>
     <lastmod>2020-12-08T02:15:47+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/instance-variable/</loc>
     <lastmod>2020-12-08T02:15:47+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_variables/</loc>
     <lastmod>2020-12-08T02:15:47+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/init/</loc>
     <lastmod>2020-12-08T02:14:02+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/new/</loc>
     <lastmod>2020-12-08T02:14:02+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_init_new/</loc>
     <lastmod>2020-12-08T02:14:02+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python-dubuggin/</loc>
     <lastmod>2020-12-07T00:14:34+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/debug/</loc>
     <lastmod>2020-12-07T00:14:34+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/debugging/</loc>
     <lastmod>2020-12-07T00:14:34+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/package/</loc>
     <lastmod>2020-12-06T15:14:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_package/</loc>
     <lastmod>2020-12-06T15:14:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/deploy/</loc>
     <lastmod>2020-12-06T15:12:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/test-pypl/</loc>
     <lastmod>2020-12-06T15:12:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/deploy_python_to_test_pypl/</loc>
     <lastmod>2020-12-06T15:12:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_global/</loc>
     <lastmod>2020-12-06T03:08:28+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/__main__/</loc>
     <lastmod>2020-12-06T03:08:28+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/__name__/</loc>
     <lastmod>2020-12-06T03:08:28+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/%EC%A0%84%EC%97%AD%EB%B3%80%EC%88%98/</loc>
     <lastmod>2020-12-06T03:08:28+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/blog/</loc>
     <lastmod>2020-12-05T01:47:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/blog_tab_resize/</loc>
     <lastmod>2020-12-05T01:47:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/hugo-column-size/</loc>
     <lastmod>2020-12-05T01:47:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/hugo-tab-size/</loc>
     <lastmod>2020-12-05T01:47:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/detach/</loc>
     <lastmod>2020-12-05T01:28:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/submodule/</loc>
     <lastmod>2020-12-05T01:28:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/branch_detach/</loc>
     <lastmod>2020-12-05T01:28:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/problem-when-repository-has-submodule/</loc>
     <lastmod>2020-12-04T23:55:06+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/github/</loc>
     <lastmod>2020-12-04T14:05:11+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%EA%B5%AC%EC%84%B1/</loc>
     <lastmod>2020-12-04T01:14:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/development-setting/</loc>
     <lastmod>2020-12-04T01:14:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/oop/</loc>
     <lastmod>2020-12-03T00:43:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/python_oop/</loc>
     <lastmod>2020-12-03T00:43:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</loc>
     <lastmod>2020-12-03T00:43:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/categories/%EA%B3%A0%EC%96%91%EC%9D%B4/</loc>
     <lastmod>2020-12-01T01:18:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/tags/%EA%B3%A0%EC%96%91%EC%9D%B4-%EA%B8%B0%EC%83%9D%EC%B6%A9/</loc>
     <lastmod>2020-12-01T01:18:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/dirofilaria_immitis/</loc>
     <lastmod>2020-12-01T01:18:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/emoji-support/</loc>
     <lastmod>2020-11-28T02:36:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/math-typesetting/</loc>
     <lastmod>2020-11-28T02:35:27+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/placeholder-text/</loc>
     <lastmod>2020-11-28T02:34:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/rich-content/</loc>
     <lastmod>2020-11-28T02:33:08+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/post/test/</loc>
     <lastmod>2020-11-28T02:13:04+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bsch0111.github.io/series/</loc>
   </url>
-  
 </urlset>
