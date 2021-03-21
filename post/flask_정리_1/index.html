@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme=""><head>
+    <title> morgan | Blog | FLASK_정리_1 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.81.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="간단하게 올리는 블로그 | bsch0111@naver.com">
+    
+    <link rel="stylesheet"
+          href="https://bsch0111.github.io/css/style.min.fbc863c4e78f5479e456777ed18acc0adbfe47d13bb3d45279d4f089fd0b2cd4.css"
+          integrity="sha256-&#43;8hjxOePVHnkVnd&#43;0YrMCtv&#43;R9E7s9RSedTwif0LLNQ="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://bsch0111.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bsch0111.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bsch0111.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bsch0111.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://bsch0111.github.io/post/flask_%EC%A0%95%EB%A6%AC_1/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://bsch0111.github.io/js/anatole-header.min.7fccea9612e197b0736c6262484db9af65cc9e9c1f1ea31ab6321016549ecff7.js"
+            integrity="sha256-f8zqlhLhl7BzbGJiSE25r2XMnpwfHqMatjIQFlSez/c="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="FLASK_정리_1"/>
+<meta name="twitter:description" content="FLASK 기본정리  기본구조 flask.app ㄴ __init__.py  기본적으로 사용할 땐 FLASK_APP이라는 환경변수를 지정하고 사용해야한다."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://bsch0111.github.io/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">morgan&#39;s 블로그</a></h3>
+            <div class="description">
+                <p>간단하게 올리는 블로그 | bsch0111@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/bsch0111/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bsch0111@naver.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; morgan | Blog 2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/categories/"
+                        
+                   title="">Categories</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>FLASK_정리_1</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Mon, Mar 22, 2021</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h2 id="flask-기본정리">FLASK 기본정리</h2>
+<ul>
+<li>기본구조
+<pre><code>flask.app
+ㄴ __init__.py
+</code></pre></li>
+<li>기본적으로 사용할 땐 <code>FLASK_APP</code>이라는 환경변수를 지정하고 사용해야한다.</li>
+<li>EX: export FLASK_APP={ 앱이름 }</li>
+<li>앱을 실행할 때는 <code>flask run</code> !</li>
+</ul>
+<h2 id="라우트">라우트</h2>
+<ul>
+<li>라우팅이라고 쓰이는 보편적인 개념은 특정 포인트에 들어왔을 때 어떤 방에 들어갈 것인지를 지정하는 것</li>
+<li>FLASK 에서는 웹 어플리케이션의 엔드포인트를 설정하는 것</li>
+<li>Flask 에서는 기본포트를 5000으로 사용한다.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># __init__.py</span>
+
+<span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask
+
+app <span style="color:#f92672">=</span> Flask(__name__)
+
+<span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Hello World!&#39;</span>
+</code></pre></div><ul>
+<li><code>@app.route('/')</code> 은 app의 주소 끝에 <code>/</code>에 접속했을때 실행하라는 것 : ex) 127.0.0.1:5000/</li>
+<li>현재 배우는 라우트의 개념은 엔드포인트(endpoint)를 어떻게 설정하게 되는 것</li>
+<li>기본 URL 뒤에는 슬래시(/)가 붙어어야함</li>
+<li>예를 들어 <code>@app.route(/bsch0111)</code> 처럼 슬래시를 부텽줘야지 오류가 실행되지 않음</li>
+</ul>
+<h2 id="http-request">HTTP Request</h2>
+<ul>
+<li>Flask 의 라우트 데코레이터를 사용하게 되면 GET,HEAD, OPTIONS 라는 메소드를 사용할 수 있음</li>
+<li><code>method</code> 라는 인자를 추가해서 POST, PUT, PATCH, DELETE 등 다른 메소드를 사용할 수 있음</li>
+<li>예시  <code>@app.route('/user', methods=['POST'])</code></li>
+</ul>
+<h2 id="세부-엔드포인트">세부 엔드포인트</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/name/&#39;</span>,defaults<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;username&#39;</span>: <span style="color:#e6db74">&#39;&#39;</span>})
+<span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/name/&lt;username&gt;&#39;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">user</span>(username):
+</code></pre></div><ul>
+<li>엔드포인트를 이용해 파라미터를 전달해 줄 수 있음</li>
+<li>default 는 기본설정</li>
+</ul>
+<h2 id="블루프린트">블루프린트</h2>
+<ul>
+<li>라우터를 묶어서 사용할 수 있도록</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">blueprint <span style="color:#f92672">=</span> Blueprint(<span style="color:#e6db74">&#39;blue&#39;</span>,__name__,url_prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/blue&#39;</span>)
+</code></pre></div><ul>
+<li>blue 라는 블루프린트를 /blue 라고 불린다면 사용하도록 설정</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@blueprint.route</span>(<span style="color:#e6db74">&#39;/name&#39;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_name</span>():
+  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;hi&#34;</span>
+</code></pre></div><ul>
+<li><code>/blue/name</code> 이라고 연결되면 사용할 수 있도록 지정</li>
+</ul>
+<h3 id="블루프린트로-지정한-값을-사용하기-위해선-">블루프린트로 지정한 값을 사용하기 위해선 !</h3>
+<ul>
+<li><code>__init__.py</code> 파일에 등록해줘야 사용할 수 있음 !</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">app<span style="color:#f92672">.</span>register_blueprint(blueprint,url_prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/blue&#39;</span>)
+</code></pre></div><h2 id="application-fatory">APPLICATION FATORY</h2>
+<p>app 생성하는 과정을 하나의 함수에 넣어두고 실행하는 것</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> FLASK
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_app</span>():
+  app <span style="color:#f92672">=</span> FLASK(__name__)
+
+  <span style="color:#75715e"># 불루프린트도 하나의 함수에서 지정하면서 ㅅ사용</span>
+  <span style="color:#f92672">from</span> blueprint_path <span style="color:#f92672">import</span> blueprint
+  app<span style="color:#f92672">.</span>register_blueprint(blueprint)
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+  app <span style="color:#f92672">=</span> create_app()
+  app<span style="color:#f92672">.</span>run()
+
+</code></pre></div>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/python/">python</a><a class="category" href="/categories/flask/">flask</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/python/">python</a><a class="tag" href="/tags/flask/">flask</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2></h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bsch0111-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/jquery.min.64d0083866906099f942140bc1c5cba4b1bf65783c52e4a63c5c46bf9dbc41f4.js"
+        integrity="sha256-ZNAIOGaQYJn5QhQLwcXLpLG/ZXg8UuSmPFxGv528QfQ="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/bundle.min.45159b0e20ba3878972e064b7edc464c31a9e35a0d0a6a71e3fec84efdbe2ea5.js"
+        integrity="sha256-RRWbDiC6OHiXLgZLftxGTDGp41oNCmpx4/7ITv2&#43;LqU="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://bsch0111.github.io/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
