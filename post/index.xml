@@ -6,7 +6,16 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Mar 2021 02:11:40 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 21:06:19 +0900</lastBuildDate><atom:link href="https://bsch0111.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode_debug</title>
+      <link>https://bsch0111.github.io/post/vscode_debug/</link>
+      <pubDate>Sat, 03 Apr 2021 21:06:19 +0900</pubDate>
+      
+      <guid>https://bsch0111.github.io/post/vscode_debug/</guid>
+      <description>vscode 로 디버그 진행할때는  shift - cmd - P로 python interpreter를 잘 지정해줘야한다 그렇지 않으면 게속 이상한 인터프린터가 잡힌다  </description>
+    </item>
+    
     <item>
       <title>FLASK_정리2</title>
       <link>https://bsch0111.github.io/post/flask_2/</link>
